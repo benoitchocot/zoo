@@ -1,3 +1,0 @@
-class true|falseean
-end
-

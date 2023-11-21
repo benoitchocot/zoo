@@ -1,3 +1,0 @@
-class time
-end
-
