@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "entree",
+        "nom": "Entrée"
+    },
+    {
+        "_id": "sortie",
+        "nom": "Sortie"
+    },
+    {
+        "_id": "nourrissage",
+        "nom": "Nourrissage"
+    },
+    {
+        "_id": "soins",
+        "nom": "Soins"
+    },
+    {
+        "_id": "stimulation",
+        "nom": "Stimulation"
+    },
+    {
+        "_id": "naissance",
+        "nom": "Naissance"
+    },
+    {
+        "_id": "deces",
+        "nom": "Décès"
+    },
+    {
+        "_id": "depart",
+        "nom": "Départ"
+    },
+    {
+        "_id": "arrivee",
+        "nom": "Arrivée"
+    },
+    {
+        "_id": "bagarre",
+        "nom": "Bagarre"
+    },
+    {
+        "_id": "accident",
+        "nom": "Accident"
+    },
+    {
+        "_id": "verification",
+        "nom": "Vérification"
+    }
+]

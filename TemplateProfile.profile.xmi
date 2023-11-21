@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_NJT14IIMEe6C08BLkqsL7Q" name="TemplateProfile" metaclassReference="_NJT2DIIMEe6C08BLkqsL7Q _NJT2DYIMEe6C08BLkqsL7Q _NJT2DoIMEe6C08BLkqsL7Q">
+  <eAnnotations xmi:id="_NJT14YIMEe6C08BLkqsL7Q" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_NJT14oIMEe6C08BLkqsL7Q" name="Module">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT144IMEe6C08BLkqsL7Q" value="00000000-0000-2710-0000-000000000000"/>
+    </contents>
+    <contents xmi:type="uml:Property" xmi:id="_NJT15IIMEe6C08BLkqsL7Q" name="ID">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT15YIMEe6C08BLkqsL7Q" value="d7ea54fa-8913-11df-8dda-0014224f9977"/>
+    </contents>
+  </eAnnotations>
+  <eAnnotations xmi:id="_NJT15oIMEe6C08BLkqsL7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_NJT154IMEe6C08BLkqsL7Q" name="TemplateProfile" nsURI="http:///schemas/TemplateProfile/_NINCoIIMEe6C08BLkqsL7Q/0" nsPrefix="TemplateProfile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NJT16IIMEe6C08BLkqsL7Q" name="Pattern">
+        <eAnnotations xmi:id="_NJT16YIMEe6C08BLkqsL7Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NJT2D4IMEe6C08BLkqsL7Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NJT16oIMEe6C08BLkqsL7Q" name="base_Package" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT17IIMEe6C08BLkqsL7Q" name="TemplateVersion" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT17oIMEe6C08BLkqsL7Q" name="TemplateImage" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT18IIMEe6C08BLkqsL7Q" name="TemplateCategories" ordered="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT18oIMEe6C08BLkqsL7Q" name="TemplateFile" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT19IIMEe6C08BLkqsL7Q" name="TemplateStringParameters" ordered="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT19oIMEe6C08BLkqsL7Q" name="TemplateParameters" ordered="false" upperBound="-1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NJT1-IIMEe6C08BLkqsL7Q" name="PatternRoot">
+        <eAnnotations xmi:id="_NJT1-YIMEe6C08BLkqsL7Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NJT2PoIMEe6C08BLkqsL7Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NJT1-oIMEe6C08BLkqsL7Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NJT1_IIMEe6C08BLkqsL7Q" name="PatternParameter">
+        <eAnnotations xmi:id="_NJT1_YIMEe6C08BLkqsL7Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NJT2RYIMEe6C08BLkqsL7Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NJT1_oIMEe6C08BLkqsL7Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT2AIIMEe6C08BLkqsL7Q" name="PatternParameterName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT2AoIMEe6C08BLkqsL7Q" name="PatternParameterLabel" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NJT2BIIMEe6C08BLkqsL7Q" name="InfrastructureModelElement">
+        <eAnnotations xmi:id="_NJT2BYIMEe6C08BLkqsL7Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NJT2WIIMEe6C08BLkqsL7Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NJT2BoIMEe6C08BLkqsL7Q" name="base_NamedElement" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT2CIIMEe6C08BLkqsL7Q" name="TemplateParameterName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NJT2CoIMEe6C08BLkqsL7Q" name="TemplateParameterLabel" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_NJT2DIIMEe6C08BLkqsL7Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+  </elementImport>
+  <elementImport xmi:id="_NJT2DYIMEe6C08BLkqsL7Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+  </elementImport>
+  <elementImport xmi:id="_NJT2DoIMEe6C08BLkqsL7Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#NamedElement"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_NJT2D4IMEe6C08BLkqsL7Q" name="Pattern">
+    <eAnnotations xmi:id="_NJT2EIIMEe6C08BLkqsL7Q" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_NJT2EYIMEe6C08BLkqsL7Q" name="ID">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2EoIMEe6C08BLkqsL7Q" value="641a5778-89a9-11df-9978-0014224f9977"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_NJT2E4IMEe6C08BLkqsL7Q" name="base_Package" association="_NJT2PIIMEe6C08BLkqsL7Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2FIIMEe6C08BLkqsL7Q" name="Template.Version">
+      <eAnnotations xmi:id="_NJT2FYIMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2FoIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2F4IMEe6C08BLkqsL7Q" value="dc10adee-8a8b-11df-9e1a-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2GIIMEe6C08BLkqsL7Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2GYIMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2GoIMEe6C08BLkqsL7Q" name="Template.Image">
+      <eAnnotations xmi:id="_NJT2G4IMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2HIIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2HYIMEe6C08BLkqsL7Q" value="e0523ecf-8a8b-11df-9e1a-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2HoIMEe6C08BLkqsL7Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2H4IMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2IIIMEe6C08BLkqsL7Q" name="Template.Categories">
+      <eAnnotations xmi:id="_NJT2IYIMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2IoIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2I4IMEe6C08BLkqsL7Q" value="f0e3af4a-8a8b-11df-9e1a-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2JIIMEe6C08BLkqsL7Q" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2JYIMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2JoIMEe6C08BLkqsL7Q" name="Template.File">
+      <eAnnotations xmi:id="_NJT2J4IMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2KIIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2KYIMEe6C08BLkqsL7Q" value="56ba0e27-90e3-11df-8b98-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2KoIMEe6C08BLkqsL7Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2K4IMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2LIIMEe6C08BLkqsL7Q" name="Template.StringParameters">
+      <eAnnotations xmi:id="_NJT2LYIMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2LoIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2L4IMEe6C08BLkqsL7Q" value="d0bbc251-94a3-11df-b1e5-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2MIIMEe6C08BLkqsL7Q" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2MYIMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2MoIMEe6C08BLkqsL7Q" name="Template.Parameters">
+      <eAnnotations xmi:id="_NJT2M4IMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2NIIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2NYIMEe6C08BLkqsL7Q" value="120a832b-6bf6-4b03-900f-f60e86f19363"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2NoIMEe6C08BLkqsL7Q" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2N4IMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <icon xmi:id="_NJT2OIIMEe6C08BLkqsL7Q" content="-77 50 4e 47 d a 1a a 0 0 0 d 49 48 44 52 0 0 0 18 0 0 0 18 8 3 0 0 0 -29 -57 -33 -36 0 0 1 -5c 50 4c 54 45 0 0 0 0 0 -1 -80 -80 -80 55 55 -56 4d -80 -4d 46 74 -47 40 -80 -56 3b 76 -4f 4e 76 -4f 49 6d -4a 44 77 -56 3c 78 -4c 40 73 -4d 3d 79 -4a 46 74 -52 43 7a -4f 4a 75 -56 45 76 -4f 42 71 -4d 42 71 -56 46 74 -4e 44 78 -4c 42 75 -51 43 72 -52 4a 72 -52 41 76 -4f 40 73 -4d 43 73 -50 40 74 -4c 44 77 -50 43 74 -4f 48 74 -49 41 72 -4d 41 77 -4d 40 75 -51 44 72 -4f 3e 72 -4f 42 75 -4d 43 73 -4e 42 76 -51 41 74 -50 43 74 -4d 42 77 -50 41 75 -4f 43 75 -50 41 75 -52 44 74 -51 42 74 -4e 41 76 -4d 42 75 -4d 41 77 -50 41 75 -50 41 75 -4d 41 75 -4e 43 76 -50 43 75 -50 41 74 -50 43 74 -4f 42 75 -50 42 74 -50 43 74 -4f 42 75 -50 41 76 -4f 42 75 -4f 42 75 -4f 42 75 -4f 43 75 -4f 42 76 -4f 42 74 -4e 42 75 -50 41 74 -4f 43 75 -4f 42 75 -4f 42 75 -4f 42 75 -4f 42 75 -4f 42 75 -4f 42 75 -4f 42 75 -50 42 75 -4f 42 75 -50 42 75 -4f 42 75 -4f 42 74 -4f 42 75 -4f 42 75 -4f 42 75 -4f 41 75 -4f 42 74 -4f 42 75 -4f 43 76 -4f 42 75 -4f 42 75 -4f 42 75 -4f 42 76 -4f 42 75 -4e 42 75 -4f 41 74 -50 42 75 -4f 42 75 -50 42 75 -4f 42 75 -4f 42 74 -4f 42 76 -4f 43 74 -4f 42 75 -4f 43 75 -4f 42 75 -4f 42 75 -4f 42 75 -4e 42 75 -4f 42 75 -4f 41 75 -4f 42 74 -4f 42 75 -50 42 75 -4f 42 75 -4f 42 75 -4f 42 75 -4f 42 75 -4f -23 -23 -23 47 78 -4d 4a 7b -4d 4c 7c -4c 4d 7c -4c 4f 7d -4c 4f 7e -4b 78 -67 -40 79 -66 -3f 49 79 -4d 7e -62 -3e -7f -61 -3d -7c -5f -3c -7a -5d -3c -79 -5c -3b -3e -35 -2a -3a -33 -2a -35 -2f -28 -33 -2e -28 7b -65 -3f -57 61 2 -23 0 0 0 77 74 52 4e 53 0 1 2 3 a b c d d e f 11 14 15 16 17 18 1a 1b 1b 21 22 23 26 26 27 28 2a 2c 2d 2e 2e 2f 2f 30 31 31 32 35 36 37 39 3a 3b 3d 3f 40 42 43 46 47 4a 4a 53 54 57 5a 5c 64 7b -76 -75 -73 -70 -6a -69 -67 -66 -62 -61 -60 -5f -5d -5a -4d -43 -42 -3e -3a -2e -2d -29 -26 -25 -24 -23 -21 -1e -1c -1b -1a -19 -17 -15 -14 -13 -12 -11 -11 -10 -10 -e -d -d -d -c -c -b -a -9 -9 -8 -6 -6 -6 -5 -4 -3 -2 41 -52 -5f 78 0 0 1 65 49 44 41 54 78 5e 6d -2f -17 53 52 71 18 -3b -f -1d 2 26 -2c -53 -30 48 4d c -2d 0 -25 31 53 5b -4b -4c -4e -3e -43 20 4b -7e 34 48 24 -3c 24 -7 5e 6d -4b 7d -7 -59 -d -3e 6f -3a 61 -3a -31 -45 33 -d -34 79 71 1e -13 39 77 77 -14 -6c -a 71 61 13 -76 -63 -56 65 -2b 49 f 0 6e 55 -7d 71 7a -72 67 51 4d 0 -24 50 -18 31 b 17 55 51 37 f -5c -65 -32 -6a 20 -21 51 1f 7 -6e -73 -2b 1e 1c 61 -63 67 -1d -7c 7c 38 7a -1c -58 7f e -44 6d -6d -75 -64 -1c 59 1 72 1e 55 44 -2d -54 33 63 -63 -5c -18 77 4f 52 20 3f 2c -5d 29 72 7c -66 -5b 32 -6c -61 -6e 8 46 -44 -56 -78 -24 -47 -23 2d 59 2f -27 -7 -e 79 -75 -54 5f 3a 36 32 -22 2f -63 29 41 31 -60 6e -4a 7f -25 -a -51 -53 72 -45 -72 -5a -60 3c -58 -5 18 -21 -14 5d -1 30 62 -46 -79 -f -23 -22 -b 15 -1d -6f -6 4a -50 -2a -57 30 1f -1 -26 -a -61 -9 4 -56 55 57 -5c -10 -28 68 -69 -1c 7e -3f -59 -61 3f 3e -50 6c 49 -53 23 -1d 51 33 -76 -11 40 -74 37 0 -51 -68 6d -f 35 -38 8 -3b 59 25 -1f 1f 20 17 -4f 66 -38 -50 -28 6f -12 -61 0 -7b -60 e -6e -6c -72 64 -80 -6c 4b -72 -3d 66 -3c 5e 5e 7b 6b 47 5c 0 -e -22 40 6 12 -79 1a 16 -7f 6c -4d 2a 2e 25 -37 d 57 1f 75 5d -2f 14 -27 21 19 -52 1e -71 -c 10 -20 -5a 13 -66 55 -1d 2a -10 2e -54 7d 5c -65 -76 5d -22 4b -1 1 7f -60 -80 b 5b -14 24 -14 0 0 0 0 49 45 4e 44 -52 42 60 -7e " location="C:\Users\Benoit\.modelio\5.3\opensource-cache\conf\org.eclipse.osgi\305\0\.cp\res\icon\pattern.png" format="png">
+      <eAnnotations xmi:id="_NJT2OYIMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2OoIMEe6C08BLkqsL7Q" name="IconType">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2O4IMEe6C08BLkqsL7Q" value="explorerIcon"/>
+        </contents>
+      </eAnnotations>
+    </icon>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_NJT2PIIMEe6C08BLkqsL7Q" name="Package_Pattern" memberEnd="_NJT2PYIMEe6C08BLkqsL7Q _NJT2E4IMEe6C08BLkqsL7Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_NJT2PYIMEe6C08BLkqsL7Q" name="extension_Pattern" type="_NJT2D4IMEe6C08BLkqsL7Q" aggregation="composite" association="_NJT2PIIMEe6C08BLkqsL7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_NJT2PoIMEe6C08BLkqsL7Q" name="PatternRoot">
+    <eAnnotations xmi:id="_NJT2P4IMEe6C08BLkqsL7Q" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_NJT2QIIMEe6C08BLkqsL7Q" name="ID">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2QYIMEe6C08BLkqsL7Q" value="ad46ab04-9310-11df-a4cf-0014224f9977"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_NJT2QoIMEe6C08BLkqsL7Q" name="base_Element" association="_NJT2Q4IMEe6C08BLkqsL7Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_NJT2Q4IMEe6C08BLkqsL7Q" name="Element_PatternRoot" memberEnd="_NJT2RIIMEe6C08BLkqsL7Q _NJT2QoIMEe6C08BLkqsL7Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_NJT2RIIMEe6C08BLkqsL7Q" name="extension_PatternRoot" type="_NJT2PoIMEe6C08BLkqsL7Q" aggregation="composite" association="_NJT2Q4IMEe6C08BLkqsL7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_NJT2RYIMEe6C08BLkqsL7Q" name="PatternParameter">
+    <eAnnotations xmi:id="_NJT2RoIMEe6C08BLkqsL7Q" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_NJT2R4IMEe6C08BLkqsL7Q" name="ID">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2SIIMEe6C08BLkqsL7Q" value="3c4678f8-f169-11df-ae59-0014224f9977"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_NJT2SYIMEe6C08BLkqsL7Q" name="base_Element" association="_NJT2VoIMEe6C08BLkqsL7Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2SoIMEe6C08BLkqsL7Q" name="PatternParameter.Name">
+      <eAnnotations xmi:id="_NJT2S4IMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2TIIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2TYIMEe6C08BLkqsL7Q" value="f2db899a-f169-11df-ae59-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2ToIMEe6C08BLkqsL7Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2T4IMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2UIIMEe6C08BLkqsL7Q" name="PatternParameter.Label">
+      <eAnnotations xmi:id="_NJT2UYIMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2UoIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2U4IMEe6C08BLkqsL7Q" value="f739b2fd-f169-11df-ae59-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2VIIMEe6C08BLkqsL7Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2VYIMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_NJT2VoIMEe6C08BLkqsL7Q" name="Element_PatternParameter" memberEnd="_NJT2V4IMEe6C08BLkqsL7Q _NJT2SYIMEe6C08BLkqsL7Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_NJT2V4IMEe6C08BLkqsL7Q" name="extension_PatternParameter" type="_NJT2RYIMEe6C08BLkqsL7Q" aggregation="composite" association="_NJT2VoIMEe6C08BLkqsL7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_NJT2WIIMEe6C08BLkqsL7Q" name="Infrastructure.ModelElement">
+    <eAnnotations xmi:id="_NJT2WYIMEe6C08BLkqsL7Q" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_NJT2WoIMEe6C08BLkqsL7Q" name="ID">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2W4IMEe6C08BLkqsL7Q" value="1f889934-8d90-11df-98b9-0014224f9977"/>
+      </contents>
+      <contents xmi:type="uml:Property" xmi:id="_NJT2XIIMEe6C08BLkqsL7Q" name="isReference"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_NJT2XYIMEe6C08BLkqsL7Q" name="base_NamedElement" association="_NJT2aoIMEe6C08BLkqsL7Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#NamedElement"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2XoIMEe6C08BLkqsL7Q" name="TemplateParameter.Name">
+      <eAnnotations xmi:id="_NJT2X4IMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2YIIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2YYIMEe6C08BLkqsL7Q" value="072f1214-8a88-11df-9e1a-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2YoIMEe6C08BLkqsL7Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2Y4IMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NJT2ZIIMEe6C08BLkqsL7Q" name="TemplateParameter.Label">
+      <eAnnotations xmi:id="_NJT2ZYIMEe6C08BLkqsL7Q" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_NJT2ZoIMEe6C08BLkqsL7Q" name="ID">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_NJT2Z4IMEe6C08BLkqsL7Q" value="d7f8ca90-8d91-11df-98b9-0014224f9977"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NJT2aIIMEe6C08BLkqsL7Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NJT2aYIMEe6C08BLkqsL7Q"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_NJT2aoIMEe6C08BLkqsL7Q" name="NamedElement_Infrastructure.ModelElement" memberEnd="_NJT2a4IMEe6C08BLkqsL7Q _NJT2XYIMEe6C08BLkqsL7Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_NJT2a4IMEe6C08BLkqsL7Q" name="extension_Infrastructure.ModelElement" type="_NJT2WIIMEe6C08BLkqsL7Q" aggregation="composite" association="_NJT2aoIMEe6C08BLkqsL7Q"/>
+  </packagedElement>
+</uml:Profile>

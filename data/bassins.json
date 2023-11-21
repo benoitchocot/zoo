@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "plage-tortues",
+        "temperatureMini": 27,
+        "temperatureMaxi": 35
+    },
+    {
+        "_id": "banquise-ours",
+        "temperatureMini": 0,
+        "temperatureMaxi": 4
+    },
+    {
+        "_id": "banquise-manchots",
+        "temperatureMini": 0,
+        "temperatureMaxi": 4
+    },
+    {
+        "_id": "banquise-phoque",
+        "temperatureMini": 0,
+        "temperatureMaxi": 4
+    }
+]

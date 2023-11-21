@@ -1,0 +1,12 @@
+[
+    {
+        "_id": "vivarium-amerique-sud",
+        "temperature": 28,
+        "hygrometrie": 70
+    },
+    {
+        "_id": "vivarium-afrique",
+        "temperature": 32,
+        "hygrometrie": 40
+    }
+]

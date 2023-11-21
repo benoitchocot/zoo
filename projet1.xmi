@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Code="http:///schemas/Code/_NINCoYIMEe6C08BLkqsL7Q/0" xmlns:TemplateProfile="http:///schemas/TemplateProfile/_NINCoIIMEe6C08BLkqsL7Q/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Code/_NINCoYIMEe6C08BLkqsL7Q/0 Code.profile.xmi#_NKtkF4IMEe6C08BLkqsL7Q http:///schemas/TemplateProfile/_NINCoIIMEe6C08BLkqsL7Q/0 TemplateProfile.profile.xmi#_NJT154IMEe6C08BLkqsL7Q">
+  <uml:Model xmi:id="_NIG8AIIMEe6C08BLkqsL7Q" name="projet1">
+    <eAnnotations xmi:id="_NIG8AYIMEe6C08BLkqsL7Q" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_NIG8AoIMEe6C08BLkqsL7Q" name="exporterVersion">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_NIG8A4IMEe6C08BLkqsL7Q" value="3.0.0"/>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NIG8BIIMEe6C08BLkqsL7Q" name="Acteurs">
+      <ownedAttribute xmi:id="_NIG8BYIMEe6C08BLkqsL7Q" name="id" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NIG8BoIMEe6C08BLkqsL7Q" name="name" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_NIG8B4IMEe6C08BLkqsL7Q" name="get_name" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NIG8CIIMEe6C08BLkqsL7Q" name="Diagramme de classe projet1"/>
+    <profileApplication xmi:id="_NK2uAIIMEe6C08BLkqsL7Q">
+      <eAnnotations xmi:id="_NLAfAIIMEe6C08BLkqsL7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="TemplateProfile.profile.xmi#_NJT154IMEe6C08BLkqsL7Q"/>
+      </eAnnotations>
+      <appliedProfile href="TemplateProfile.profile.xmi#_NJT14IIMEe6C08BLkqsL7Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_NLAfAYIMEe6C08BLkqsL7Q">
+      <eAnnotations xmi:id="_NLAfAoIMEe6C08BLkqsL7Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Code.profile.xmi#_NKtkF4IMEe6C08BLkqsL7Q"/>
+      </eAnnotations>
+      <appliedProfile href="Code.profile.xmi#_NKtkEIIMEe6C08BLkqsL7Q"/>
+    </profileApplication>
+  </uml:Model>
+  <TemplateProfile:Pattern xmi:id="_NLAfA4IMEe6C08BLkqsL7Q" base_Package="_NIG8CIIMEe6C08BLkqsL7Q"/>
+  <Code:StandardPackage xmi:id="_NLEwcIIMEe6C08BLkqsL7Q" base_Package="_NIG8CIIMEe6C08BLkqsL7Q" nocode="true"/>
+</xmi:XMI>
