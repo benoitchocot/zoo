@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
   http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
   def index
     @articles = Article.all
+    @animaux_random = Animal.order("RANDOM()").limit(3)
   end
 
   def show

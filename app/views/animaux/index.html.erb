@@ -1,0 +1,8 @@
+<!-- app/views/animaux/index.html.erb -->
+<h2>Liste des animaux</h2>
+
+<ul>
+  <% @animaux.each do |animal| %>
+    <li><%= animal.nom %> - <%= animal.espece %> </li>
+  <% end %>
+</ul>
