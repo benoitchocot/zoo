@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .masthead {
     background-size: cover;
     min-height: 97vh;
