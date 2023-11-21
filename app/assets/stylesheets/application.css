@@ -1,0 +1,59 @@
+.masthead {
+    background-size: cover;
+    min-height: 97vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.masthead-content {
+    padding-top: 70vh;
+}
+
+.pei-titre {
+    font-weight: normal;
+    font-size: 2em;
+    padding: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-transform: uppercase;
+    color: #0B3954;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 5px;
+    display: inline-block;
+    background: linear-gradient(45deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.05) 80%);
+    text-shadow: 1px 1px 3px #222;
+}   
+
+.pei-bouton {
+    padding-top: 20px;
+}
+
+.header-separator {
+    width: 100%;
+    max-width: 100%;
+    z-index: 45;
+    position: absolute;
+    bottom: -2px;
+}   
+
+@media (max-width: 575.98px) {
+    .masthead-content {
+      padding-top: 40vh;
+      padding-bottom: 20vh;
+    }
+    .scrach-sep {
+        height: 21px;
+      }
+  }
+@media (max-width: 768px) {
+    .masthead {
+      min-height: 50vh;
+    }
+  }
+  @media (max-width: 1024px) {
+    .masthead {
+      background-position: center;
+      background-attachment: scroll;
+    }
+  }
