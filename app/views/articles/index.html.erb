@@ -1,28 +1,33 @@
+<div>
+  <%= render "layouts/banner"%>
+</div>
+<div class="container">
 <h1 class="pt-5">Articles</h1>
 
-Our blog has <%= Article.public_count %> articles and counting!
+  Our blog has <%= Article.public_count %> articles and counting!
 
-<ul>
-  <% @articles.each do |article| %>
-    <% unless article.archived? %>
-      <li>
-        <%= link_to article.titre, article %>
-      </li>
+  <ul>
+    <% @articles.each do |article| %>
+      <% unless article.archived? %>
+        <li>
+          <%= link_to article.titre, article %>
+        </li>
+      <% end %>
     <% end %>
-  <% end %>
-</ul>
+  </ul>
 
-<%= link_to "New Article", new_article_path %>
+  <%= link_to "New Article", new_article_path %>
 
-<h2>Animaux aléatoires</h2>
+  <h2>Animaux aléatoires</h2>
 
-<ul>
-  <% @animaux_random.each do |animal| %>
-    <% case animal.espece
-        when "loup" %>
-    <h3> ça souffle </h3>     
+  <ul>
+    <% @animaux_random.each do |animal| %>
+      <% case animal.espece
+          when "loup" %>
+      <h3> ça souffle </h3>     
+      <% end %>
+
+      <li><%= animal.nom %> - <%= animal.espece %></li>
     <% end %>
-
-    <li><%= animal.nom %> - <%= animal.espece %></li>
-  <% end %>
-</ul>
+  </ul>
+</div>
