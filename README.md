@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bonjour et bienvenue sur le Projet ZOO
 
-Things you may want to cover:
+Ce projet est documenté dans le pdf "Fil Rouge Module 6 Activité 1.pdf", à la racine du projet
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Pour installer ce projet, soyez sur d'avoir installé Ruby, SQLite3 ainsi que Rails
+Une fois que vous avez cloné le projet, utilisez la commande "bundle install"
+Ensuite, il faut effectuer la migration de base de données avec la commande "bin/rails db:migrate" sous Linux
+Enjoy !

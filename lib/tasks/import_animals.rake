@@ -1,4 +1,6 @@
 # lib/tasks/import_animals.rake
+# use rake db:import_animals
+
 require 'json'
 
 namespace :db do
