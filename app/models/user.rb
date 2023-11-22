@@ -1,10 +1,6 @@
 class User < ApplicationRecord
-  ROLES = %w[utilisateur admin].freeze
-
-  validates :role, inclusion: { in: ROLES }
-
-  # Méthodes pour vérifier les rôles
-  def admin?
-    role == 'admin'
-  end
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 end

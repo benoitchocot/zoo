@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :check_admin, only: [:create]
+
   def index
     @articles = Article.all
     @animaux_random = Animal.order("RANDOM()").limit(3)
@@ -55,9 +57,15 @@ class ArticlesController < ApplicationController
     @animal = api_controller.instance_variable_get('@animal')
   end
 
+
   private
     def article_params
       params.require(:article).permit(:titre, :body, :status)
     end
 
+    def check_admin
+      unless current_user.admin?
+        redirect_to root_path, alert: "Vous n'avez pas la permission d'accéder à cette fonctionnalité."
+      end
+    end
 end
