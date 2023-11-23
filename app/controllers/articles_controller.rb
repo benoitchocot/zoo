@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :check_admin, only: [:create]
+  before_action :check_admin, only: [:create, :update]
 
   def index
     @articles = Article.all
@@ -30,12 +30,15 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article = Article.find(params[:id])
+    if current_user && current_user.is_admin
 
-    if @article.update(article_params)
-      redirect_to @article
-    else
-      render :edit, status: :unprocessable_entity
+      @article = Article.find(params[:id])
+
+      if @article.update(article_params)
+        redirect_to @article
+      else
+        render :edit, status: :unprocessable_entity
+      end
     end
   end
 
@@ -64,7 +67,7 @@ class ArticlesController < ApplicationController
     end
 
     def check_admin
-      unless current_user.admin?
+      unless current_user.is_admin?
         redirect_to root_path, alert: "Vous n'avez pas la permission d'accéder à cette fonctionnalité."
       end
     end
