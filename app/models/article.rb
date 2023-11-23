@@ -8,16 +8,16 @@ class Article < ApplicationRecord
   validates :titre, presence: true
   validates :body, presence: true, length: { minimum: 10 }
 
-  def self.generate_fake_articles(count = 10)
+  def self.generate_fake_articles
       title = Faker::Creature::Animal.name.capitalize
-      content = Faker::Lorem.paragraphs(number: 3).join("\n\n") +
-                "\n\n" +
-                "Actualité sur les #{title} :\n\n" +
-                Faker::Lorem.paragraphs(number: 2).join("\n\n")
+      content = "Actualité sur les #{title} :\n\n" +
+                Faker::Lorem.paragraphs(number: 12).join("\n\n")
 
-      Article.create(
+      article = Article.new(
         titre: title,
-        body: content
+        body: content,
+        status: "public"
       )
+
     end
   end
