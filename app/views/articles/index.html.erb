@@ -16,7 +16,9 @@
     <% end %>
   </ul>
 
-  <%= link_to "New Article", new_article_path %>
+<% if current_user && current_user.is_admin? %>
+  <%= link_to "Nouvel article", new_article_path %>
+<% end %>
 
   <h2>Animaux aléatoires</h2>
 
