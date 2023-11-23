@@ -1,4 +1,3 @@
-# lib/tasks/generate_animals.rake
 # use rails animals:generate
 
 namespace :animals do
