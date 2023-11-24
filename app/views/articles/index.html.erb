@@ -24,11 +24,6 @@
 
   <ul>
     <% @animaux_random.each do |animal| %>
-      <% case animal.espece
-          when "loup" %>
-      <h3> ça souffle </h3>     
-      <% end %>
-
       <li><%= animal.nom %> - <%= animal.espece %></li>
     <% end %>
   </ul>

@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
-    @animaux_random = Animal.order("RANDOM()").limit(3)
+    @animaux_random = Animal.order("RANDOM()").limit(10)
   end
 
   def show
