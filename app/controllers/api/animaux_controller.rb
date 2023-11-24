@@ -3,6 +3,9 @@ class Api::AnimauxController < ApplicationController
 
   def index
     @animaux = Animal.all
+
+    animaux = File.read('json/animaux.json')
+    render json: animaux
   end
 
   def show
@@ -18,11 +21,6 @@ class Api::AnimauxController < ApplicationController
     else
       render json: { error: 'Animal not found' }, status: :not_found
     end
-  end
-
-  def animaux
-    animaux = File.read('json/animaux.json')
-    render json: animaux
   end
 
 end
