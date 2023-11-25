@@ -1,10 +1,27 @@
-# README
+# Bienvenue sur le Projet ZOO 🦁🐼🐒
 
-Bonjour et bienvenue sur le Projet ZOO
+Ce projet contient une documentation détaillée disponible dans le fichier [Fil Rouge Module 6 Activité 1.pdf], situé à la racine du projet.
 
-Ce projet est documenté dans le pdf "Fil Rouge Module 6 Activité 1.pdf", à la racine du projet
+## Installation
 
-Pour installer ce projet, soyez sur d'avoir installé Ruby, SQLite3 ainsi que Rails
-Une fois que vous avez cloné le projet, utilisez la commande "bundle install"
-Ensuite, il faut effectuer la migration de base de données avec la commande "bin/rails db:migrate" sous Linux
-Enjoy !
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
+- Ruby
+- SQLite3
+
+### Étapes d'installation
+
+1. Clonez le projet sur votre machine :
+
+   git clone https://lien_vers_le_projet.git
+
+Installez les dépendances en utilisant la commande :
+
+bundle install
+Effectuez la migration de la base de données :
+
+bin/rails db:migrate
+Démarrage
+Pour lancer l'application, exécutez la commande suivante :
+
+bin/rails server
+Visitez http://localhost:3000 dans votre navigateur pour accéder au projet.
