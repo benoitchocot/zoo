@@ -1,5 +1,4 @@
-# lib/tasks/import_animals.rake
-# use rake db:import_animals
+# use rails db:import_animals
 
 require 'json'
 
