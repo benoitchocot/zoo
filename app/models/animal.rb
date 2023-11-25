@@ -8,4 +8,8 @@ class Animal < ApplicationRecord
 
     Animal.create(nom: nom, espece: espece)
   end
+
+
+  validates :nom, presence: true
+  validates :espece, presence: true
 end
