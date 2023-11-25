@@ -10,18 +10,17 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 ### Étapes d'installation
 
-1. Clonez le projet sur votre machine :
+Clonez le projet sur votre machine :
 
    git clone https://lien_vers_le_projet.git
 
 Installez les dépendances en utilisant la commande :
 
-bundle install
+bundle install <br>
 Effectuez la migration de la base de données :
 
-bin/rails db:migrate
-Démarrage
+bin/rails db:migrate<br>
 Pour lancer l'application, exécutez la commande suivante :
 
-bin/rails server
+bin/rails server <br>
 Visitez http://localhost:3000 dans votre navigateur pour accéder au projet.
