@@ -3,10 +3,13 @@ class ArticlesController < ApplicationController
   before_action :check_admin, only: [:create, :update]
 
   def index
-    @articles = Article.all
+    @articles = Article.order(created_at: :desc).limit(3) # Récupérer les 3 articles les plus récents
     @animaux_random = Animal.order("RANDOM()").limit(10)
   end
 
+  def all_articles
+    @articles = Article.all # Récupérer tous les articles pour la page avec tous les articles
+  end
   def show
     @article = Article.find(params[:id])
   end

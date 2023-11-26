@@ -15,6 +15,7 @@
       <% end %>
     <% end %>
   </ul>
+<%= link_to "Voir tous les articles", all_articles_path %>
 
 <% if current_user && current_user.is_admin? %>
   <%= link_to "Nouvel article", new_article_path %>

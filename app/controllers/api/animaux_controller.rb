@@ -1,9 +1,9 @@
 # app/controllers/api/animaux_controller.rb
 class Api::AnimauxController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :all_articles]
   before_action :load_animals_data
   before_action :check_admin, only: [:new]
-  
+
   require 'fileutils'
 
   require 'json'

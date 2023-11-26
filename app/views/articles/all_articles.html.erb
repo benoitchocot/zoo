@@ -1,0 +1,15 @@
+
+<div class="container">
+<h1 class="pt-5">Articles</h1>
+
+  Our blog has <%= Article.public_count %> articles and counting!
+
+  <ul>
+    <% @articles.each do |article| %>
+      <% unless article.archived? %>
+        <li>
+          <%= link_to article.titre, article %>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
