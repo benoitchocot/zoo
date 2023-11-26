@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   resources :articles
 
   namespace :api do
-    resources :animaux, only: [:index, :create, :show, :update, :destroy]
-  end
+    resources :animaux, only: [:index, :new, :create, :show, :update, :destroy]
+end
 end

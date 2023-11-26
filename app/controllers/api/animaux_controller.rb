@@ -1,6 +1,9 @@
 # app/controllers/api/animaux_controller.rb
 class Api::AnimauxController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :load_animals_data
+  before_action :check_admin, only: [:new]
+
   require 'json'
 
 
@@ -11,7 +14,14 @@ class Api::AnimauxController < ApplicationController
     render json: animaux
   end
 
-  # POST /animaux
+  def new
+    @animaux = Animal.new
+    respond_to do |format|
+      format.html { render 'api/new' }
+      format.json { render json: @animal } # Par exemple, répondre avec du JSON
+    end
+  end
+
   def create
     new_animal = { "nom" => params[:nom], "espece" => params[:espece], "naissance" => params[:naissance], "deces" => params[:deces], "sexe" => params[:sexe], "observations" => params[:observations], "position" => params[:position] }
     @animals_data << new_animal
@@ -33,9 +43,14 @@ class Api::AnimauxController < ApplicationController
     end
   end
 
-    # ... Autres actions pour show, update, destroy ...
 
   private
+
+  def check_admin
+    unless current_user.is_admin?
+      redirect_to root_path, alert: "Vous n'avez pas la permission d'accéder à cette fonctionnalité."
+    end
+  end
 
   def fetch_animals_data
     JSON.parse(URI.open(ANIMAUX_JSON_URL).read)
