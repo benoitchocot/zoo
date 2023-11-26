@@ -750,15 +750,12 @@
     "position": "dedans"
   },
   {
-    "nom": "rené",
-    "espece": "taupe"
-  },
-  {
-    "nom": "rené",
-    "espece": "taupe"
-  },
-  {
-    "nom": "Gali",
-    "espece": "Aligator"
+    "nom": "René",
+    "espece": "tortue",
+    "naissance": "2023-11-12",
+    "deces": "",
+    "sexe": "M",
+    "observations": "pas d'observations",
+    "position": "dehors"
   }
 ]

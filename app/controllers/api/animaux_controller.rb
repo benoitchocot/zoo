@@ -13,7 +13,7 @@ class Api::AnimauxController < ApplicationController
 
   # POST /animaux
   def create
-    new_animal = { "nom" => params[:nom], "espece" => params[:espece] }
+    new_animal = { "nom" => params[:nom], "espece" => params[:espece], "naissance" => params[:naissance], "deces" => params[:deces], "sexe" => params[:sexe], "observations" => params[:observations], "position" => params[:position] }
     @animals_data << new_animal
 
     save_animals_data
