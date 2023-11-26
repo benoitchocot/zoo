@@ -5,12 +5,13 @@ Rails.application.routes.draw do
 
   get 'animaux/index'
   get '/animaux', to: 'animaux#index'
-  post 'api/animaux/reset_animaux', to: 'api/animaux#reset_animaux', as: :reset_animaux
 
   resources :articles
 
   namespace :api do
     resources :animaux, only: [:index, :new, :create, :show, :update, :destroy]
+    post 'animaux/reset_animaux', to: 'animaux#reset_animaux', as: :reset_animaux
 
 end
 end
+  
