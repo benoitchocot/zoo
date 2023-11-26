@@ -3,6 +3,8 @@ class Api::AnimauxController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :load_animals_data
   before_action :check_admin, only: [:new]
+  
+  require 'fileutils'
 
   require 'json'
 
@@ -43,6 +45,17 @@ class Api::AnimauxController < ApplicationController
     end
   end
 
+  def reset_animaux
+    # Chemin vers les fichiers JSON
+    template_path = Rails.root.join('json/animaux_template.json')
+    animaux_path = Rails.root.join('json/animaux.json')
+
+    # Copie du contenu de animaux_template.json vers animaux.json
+    FileUtils.cp(template_path, animaux_path)
+
+    # Redirection ou réponse appropriée après la réinitialisation
+    redirect_to root_path, notice: 'animaux.json a été réinitialisé avec succès !'
+  end
 
   private
 

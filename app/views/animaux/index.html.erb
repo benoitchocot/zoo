@@ -6,3 +6,5 @@
     <li><%= animal.nom %> - <%= animal.espece %> </li>
   <% end %>
 </ul>
+
+<%= button_to "Réinitialiser animaux.json", reset_animaux_path, method: :post %>
