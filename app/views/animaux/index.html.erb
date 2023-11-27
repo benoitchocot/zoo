@@ -1,18 +1,24 @@
 <!-- app/views/animaux/index.html.erb -->
 <h2>Liste des animaux</h2>
 <div class="container">
-<% @animaux_par_enclos.each do |espece, enclos| %>
-  <h2><%= espece %></h2>
-  <p>Enclos : <%= enclos %></p>
+
+
+<% @especes_par_enclos.each do |espece_id, data| %>
+  <h3><%= espece_id.capitalize %></h3>
+  <p>Enclos : <%= data['enclos_nom'] %></p>
+  <p>Superficie : <%= data['superficie'] %> m²</p>
+  <p>Zone géographique : <%= data['zone'].capitalize %></p>
   <ul>
     <% @animaux.each do |animal| %>
-      <% if animal['espece'] == espece %>
-        <li><%= animal['nom'] %></li>
-        <!-- Vous pouvez afficher d'autres détails de l'animal ici -->
+      <% if animal['espece'] == espece_id %>
+        <li><%= animal['nom'] %> - Sexe : <%= animal['sexe'] %></li>
+        <!-- Autres détails de l'animal ici -->
       <% end %>
     <% end %>
   </ul>
 <% end %>
+
+
 <% if current_user && current_user.is_admin? %>
   <%= link_to "Ajouter un animal", new_api_animaux_path, class: "mb-3"%>
 
