@@ -3,7 +3,7 @@
 
 <ul>
   <% @animaux.each do |animal| %>
-    <li><%= animal.nom %> - <%= animal.espece %> </li>
+    <li><%= animal["nom"] %> - <%= animal["espece"] %> </li>
   <% end %>
 </ul>
 

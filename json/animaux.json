@@ -748,5 +748,14 @@
     "sexe": "M",
     "observations": "",
     "position": "dedans"
+  },
+  {
+    "nom": "rené",
+    "espece": "taupe",
+    "naissance": "2023-11-01",
+    "deces": "",
+    "sexe": "M",
+    "observations": "swagz",
+    "position": "dedans"
   }
 ]
