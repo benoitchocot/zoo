@@ -1,10 +1,18 @@
 <!-- app/views/animaux/index.html.erb -->
 <h2>Liste des animaux</h2>
-
-<ul>
-  <% @animaux.each do |animal| %>
-    <li><%= animal["nom"] %> - <%= animal["espece"] %> </li>
-  <% end %>
-</ul>
+<div class="container">
+<% @animaux_par_enclos.each do |espece, enclos| %>
+  <h2><%= espece %></h2>
+  <p>Enclos : <%= enclos %></p>
+  <ul>
+    <% @animaux.each do |animal| %>
+      <% if animal['espece'] == espece %>
+        <li><%= animal['nom'] %></li>
+        <!-- Vous pouvez afficher d'autres détails de l'animal ici -->
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
 
 <%= button_to "Réinitialiser animaux.json", api_reset_animaux_path, method: :post %>
+</div>

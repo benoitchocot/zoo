@@ -9,6 +9,7 @@ class Article < ApplicationRecord
   validates :body, presence: true, length: { minimum: 10 }
 
   def self.generate_fake_articles
+      Faker::Config.locale = 'fr'
       title = Faker::Creature::Animal.name.capitalize
       content = "Actualité sur les #{title} :\n\n" +
                 Faker::Lorem.paragraphs(number: 2).join("\n\n")
