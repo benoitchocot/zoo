@@ -1,6 +1,7 @@
 class CreateEnclos < ActiveRecord::Migration[7.1]
   def change
     create_table :enclos do |t|
+      t.string :__id
       t.string :nom
       t.string :zone
       t.string :coordonnees

@@ -49,7 +49,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_123434) do
     t.string "nom"
     t.boolean "sociable"
     t.text "observations"
-    t.boolean "dangeureux"
+    t.boolean "dangereux"
     t.string "enclos"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
