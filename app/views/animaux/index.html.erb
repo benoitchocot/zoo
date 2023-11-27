@@ -4,15 +4,15 @@
 
 
 <% @especes_par_enclos.each do |espece_id, data| %>
-  <h3><%= espece_id.capitalize %></h3>
+  <h3><%= espece_id %></h3>
   <p>Enclos : <%= data['enclos_nom'] %></p>
   <p>Superficie : <%= data['superficie'] %> m²</p>
   <p>Zone géographique : <%= data['zone'].capitalize %></p>
   <ul>
     <% @animaux.each do |animal| %>
-      <% if animal['espece'] == espece_id %>
-        <li><%= animal['nom'] %> - Sexe : <%= animal['sexe'] %></li>
-        <!-- Autres détails de l'animal ici -->
+        <% if animal['espece'] == espece_id %>
+              <!-- Autres détails de l'animal ici -->
+          <li><%= animal['nom'] %> - Sexe : <%= animal['sexe'] %></li>
       <% end %>
     <% end %>
   </ul>
