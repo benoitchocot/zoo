@@ -9,7 +9,7 @@ namespace :db do
     especes_data = JSON.parse(File.read(file_path))
 
     especes_data.each do |espece_data|
-      Espece.create(__id: espece_data['__id'], nom: espece_data['nom'], sociable: espece_data['sociable'], observations: espece_data['observations'], dangereux: espece_data['dangeureux'], enclos: espece_data['enclos'])
+      Espece.create(_id: espece_data['_id'], nom: espece_data['nom'], sociable: espece_data['sociable'], observations: espece_data['observations'], dangereux: espece_data['dangeureux'], enclos: espece_data['enclos'])
     end
 
     puts 'Import finished!'

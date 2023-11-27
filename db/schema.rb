@@ -32,6 +32,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_123434) do
   end
 
   create_table "enclos", force: :cascade do |t|
+    t.string "_id"
     t.string "nom"
     t.string "zone"
     t.string "coordonnees"
@@ -46,6 +47,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_123434) do
   end
 
   create_table "especes", force: :cascade do |t|
+    t.string "_id"
     t.string "nom"
     t.boolean "sociable"
     t.text "observations"
