@@ -12,7 +12,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 Clonez le projet sur votre machine :
 
-   git clone https://lien_vers_le_projet.git
+- gh repo clone benoitchocot/zoo
 
 Installez les dépendances en utilisant la commande :
 
