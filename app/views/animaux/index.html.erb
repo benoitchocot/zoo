@@ -13,6 +13,9 @@
     <% end %>
   </ul>
 <% end %>
+<% if current_user && current_user.is_admin? %>
+  <%= link_to "Ajouter un animal", new_api_animaux_path, class: "mb-3"%>
 
-<%= button_to "Réinitialiser animaux.json", api_reset_animaux_path, method: :post %>
+  <%= button_to "Réinitialiser animaux.json", api_reset_animaux_path, method: :post, class: "mb-3" %>
+<% end %>
 </div>
