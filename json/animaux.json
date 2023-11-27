@@ -748,5 +748,14 @@
     "sexe": "M",
     "observations": "",
     "position": "dedans"
+  },
+  {
+    "nom": "rené",
+    "espece": "taupe",
+    "naissance": "",
+    "deces": "",
+    "sexe": "M",
+    "observations": "xD",
+    "position": "dedans"
   }
 ]
