@@ -1,7 +1,8 @@
-# animal.rb (dans app/models/animal.rb pour Rails)
 require 'faker'
 
 class Animal < ApplicationRecord
+  belongs_to :espece, foreign_key: "_id"
+
   def self.generate_random_animal
     nom = Faker::Name.name
     espece = Faker::Creature::Animal.name
