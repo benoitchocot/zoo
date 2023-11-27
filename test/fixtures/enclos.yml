@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  zone: MyString
+  coordonnees: MyString
+  superficie: MyString
+  __t: MyString
+  temperatureMini: 1
+  temperatureMaxi: 1
+  hygrometrie: 1
+  temperature: 1
+
+two:
+  nom: MyString
+  zone: MyString
+  coordonnees: MyString
+  superficie: MyString
+  __t: MyString
+  temperatureMini: 1
+  temperatureMaxi: 1
+  hygrometrie: 1
+  temperature: 1

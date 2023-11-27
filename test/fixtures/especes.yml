@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  sociable: false
+  observations: MyText
+  dangeureux: false
+  enclos: MyString
+
+two:
+  nom: MyString
+  sociable: false
+  observations: MyText
+  dangeureux: false
+  enclos: MyString

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_23_092457) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_27_123434) do
   create_table "animals", force: :cascade do |t|
     t.string "nom"
     t.string "espece"
@@ -29,6 +29,30 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_23_092457) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "status"
+  end
+
+  create_table "enclos", force: :cascade do |t|
+    t.string "nom"
+    t.string "zone"
+    t.string "coordonnees"
+    t.string "superficie"
+    t.string "__t"
+    t.integer "temperatureMini"
+    t.integer "temperatureMaxi"
+    t.integer "hygrometrie"
+    t.integer "temperature"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "especes", force: :cascade do |t|
+    t.string "nom"
+    t.boolean "sociable"
+    t.text "observations"
+    t.boolean "dangeureux"
+    t.string "enclos"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

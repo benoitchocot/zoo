@@ -1,4 +1,4 @@
-# db/migrate/[timestamp]_create_default_admin_user.rb
+# db/devise/[timestamp]_create_default_admin_user.rb
 class CreateDefaultAdminUser < ActiveRecord::Migration[7.1] # Assurez-vous de spécifier la version correcte d'Active Record
   def up
     User.create!(
