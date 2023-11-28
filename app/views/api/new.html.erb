@@ -1,27 +1,67 @@
+<div class="container">
+  <h1>Ajouter un animal</h1>
+  <form id="animalForm">
+    <label for="nom">Nom:</label><br>
+    <input type="text" id="nom" name="nom"><br><br>
+    <label for="espece">Espèce:</label><br>
+    <input type="text" id="espece" name="espece"><br><br>
 
-<form id="animalForm">
-  <label for="nom">Nom:</label><br>
-  <input type="text" id="nom" name="nom"><br><br>
-  <label for="espece">Espèce:</label><br>
-  <input type="text" id="espece" name="espece"><br><br>
-  <label for="naissance">Naissance:</label><br>
-  <input type="date" id="naissance" name="naissance"><br><br>
-  <label for="deces">Décès:</label><br>
-  <input type="date" id="deces" name="deces"><br><br>
-  <label for="sexe">Sexe:</label><br>
-  <select name="sexe" id="sexe">
-  <option value="M">M</option>  
-  <option value="F">F</option>  
-  </select><br><br>
-  <label for="observations">Observations:</label><br>
-  <input type="text" id="observations" name="observations"><br><br>
-  <label for="position">Position:</label><br>
-  <select name="position" id="position">
-  <option value="dedans">dedans</option>  
-  <option value="dehors">dehors</option>  
-  </select><br><br> 
-  <input type="submit" value="Ajouter">
-</form>
+    <select name="espece" id="espece">
+    <option value="kangourou">Kangourou</option>  
+    <option value="koala">Koala</option>  
+    <option value="autruche">Autruche</option>  
+    <option value="tortue">Tortue</option>  
+    <option value="panda">Panda</option>  
+    <option value="tigre">Tigre</option>  
+    <option value="orang-outan">Orang-outan</option>  
+    <option value="rhinocéros">Rhinocéros</option>  
+    <option value="lama">Lama</option>  
+    <option value="iguane">Iguane</option>  
+    <option value="boa">Boa</option>  
+    <option value="ara">Ara</option>  
+    <option value="chameau">Chameau</option>  
+    <option value="fennec">Fennec</option>  
+    <option value="vipere">Vipère</option>  
+    <option value="bison">Bison</option>  
+    <option value="ours-noir">Ours-noir</option>  
+    <option value="loup">Loup</option>  
+    <option value="aigle">Aigle</option>  
+    <option value="ours-polaire">Ours-polaire</option>  
+    <option value="manchot">Manchot</option>  
+    <option value="phoque">Phoque</option> 
+    <option value="suricate">Suricate</option>  
+    <option value="aigle">Aigle</option>  
+    <option value="gnou">Gnou</option>  
+    <option value="elephant">Eléphant</option>  
+    <option value="lion">Lion</option>  
+    <option value="girafe">Girafe</option>  
+    <option value="zebre">Zebre</option>  
+    <option value="vautour">Vautour</option>
+    <option value="chamois">Chamois</option>  
+    <option value="lynx">Lynx</option>  
+    <option value="loutre">Loutre</option>
+    <option value="marmotte">Marmotte</option>
+    <option value="chouette">Chouette</option>
+    </select><br><br>
 
+    <label for="naissance">Naissance:</label><br>
+    <input type="date" id="naissance" name="naissance"><br><br>
+    <label for="deces">Décès:</label><br>
+    <input type="date" id="deces" name="deces"><br><br>
+    <label for="sexe">Sexe:</label><br>
+    <select name="sexe" id="sexe">
+    <option value="M">M</option>  
+    <option value="F">F</option>  
+    </select><br><br>
+    <label for="observations">Observations:</label><br>
+    <input type="text" id="observations" name="observations"><br><br>
+    <label for="position">Position:</label><br>
+    <select name="position" id="position">
+    <option value="dedans">dedans</option>  
+    <option value="dehors">dehors</option>  
+    </select><br><br> 
+    <input type="submit" value="Ajouter">
+  </form>
+</div>
   <%= csrf_meta_tags %>
   <script src="/assets/api.js" defer></script>
