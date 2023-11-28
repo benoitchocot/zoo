@@ -1,20 +1,27 @@
 <div class="container">
 
 <% @animaux_par_espece.each do |espece, animaux| %>
-  <h2><%= espece.nom %></h2>
-  <% if espece.enclo.present? %>
-    <p>Enclos: <%= espece.enclo.nom %></p>
-    <p>Superficie: <%= espece.enclo.superficie %> m²</p>
-  <% else %>
-    <p>Aucun enclos associé à cette espèce.</p>
-  <% end %>
-
-  <ul>
-    <% animaux.each do |animal| %>
-      <li><%= animal.nom %></li>
-      <!-- Autres détails de l'animal ici -->
+  <% if espece.present? %>
+    <h2><%= espece.nom %></h2>
+    <% if espece.enclo.present? %>
+      <p>Enclos: <%= espece.enclo.nom %></p>
+      <p>Superficie: <%= espece.enclo.superficie %> m²</p>
+    <% else %>
+      <p>Aucun enclos associé à cette espèce.</p>
     <% end %>
-  </ul>
+
+    <ul>
+      <% animaux.each do |animal| %>
+        <li><%= animal.nom %></li>
+        <!-- Autres détails de l'animal ici -->
+      <% end %>
+    </ul>
+  <% else %>
+  <h2>Information sur l'espèce indisponible.</h2>
+      <% animaux.each do |animal| %>
+        <li><%= animal.nom %> - <%= animal.espece %> </li>
+        <% end %>
+  <% end %>
 <% end %>
 
 
