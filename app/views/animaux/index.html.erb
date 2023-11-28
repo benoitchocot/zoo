@@ -1,19 +1,15 @@
 <div class="container">
 <% @animaux.each do |animal| %>
-  <div>
-    <h2><%= animal.nom %></h2>
-    <% if animal.espece %>
-      <p>Espece: <%= animal.espece.nom %></p>
-      <% if animal.espece.enclo %>
-        <p>Enclos: <%= animal.espece.enclo.nom %></p>
-      <% else %>
-        <p>Enclos: Aucun enclos associé</p>
-      <% end %>
-    <% else %>
-      <p>Espece: Espèce non définie</p>
-    <% end %>
-  </div>
+  <h2><%= animal.nom %></h2>
+  <% if animal.espece.present? && animal.espece.enclo.present? %>
+    <p>Espece: <%= animal.espece.nom %></p>
+    <p>Enclos: <%= animal.espece.enclo.nom %></p>
+    <p>Superficie: <%= animal.espece.enclo.superficie %> m²</p>
+  <% else %>
+    <p>Cet animal n'a pas d'enclos associé.</p>
+  <% end %>
 <% end %>
+
 
 <% if current_user && current_user.is_admin? %>
   <%= link_to "Ajouter un animal", new_api_animaux_path, class: "mb-3"%>

@@ -2,7 +2,7 @@ class AnimauxController < ApplicationController
 
   def index
     @animaux = Animal.left_joins(espece: :enclo).all
-  end
+    end
 
   def index_json
     animaux_data = File.read('json/animaux.json')
