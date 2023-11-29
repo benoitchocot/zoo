@@ -1,7 +1,7 @@
 class AnimalsController < ApplicationController
 
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :load_animals_data
+#  before_action :load_animals_data
   before_action :check_admin, only: [:create, :update]
 
 
@@ -52,9 +52,9 @@ class AnimalsController < ApplicationController
     end
   end
 
-
   def show
     @animal = Animal.find(params[:id])
+
   end
 
   def new
