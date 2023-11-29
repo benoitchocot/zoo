@@ -24,5 +24,12 @@
   <dt>Position :</dt>
   <dd><%= @animal.position %></dd>
 </dl>
-<%= link_to 'Retour à la liste', animaux_path %>
+<%= link_to 'Retour à la liste', animals_path %>
+<% if current_user && current_user.is_admin? %>
+  <ul>
+    <li><%= link_to "Modifier", edit_animal_path(@animal) %></li>
+    <li><%= link_to 'Supprimer', @animal, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+  </ul>
+
+<% end %>
 </div>

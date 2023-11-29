@@ -2,7 +2,7 @@ class AnimalsController < ApplicationController
 
   before_action :authenticate_user!, except: [:index, :show]
   before_action :load_animals_data
-  before_action :check_admin, only: [:new]
+  before_action :check_admin, only: [:create, :update]
 
 
   def index
@@ -69,6 +69,31 @@ class AnimalsController < ApplicationController
     else
       render :new
     end
+  end
+
+
+  def edit
+    @animal = Animal.find(params[:id])
+  end
+
+  def update
+    if current_user && current_user.is_admin
+
+      @animal = Animal.find(params[:id])
+
+      if @animal.update(animal_params)
+        redirect_to @animal
+      else
+        render :edit, status: :unprocessable_entity
+      end
+    end
+  end
+
+  def destroy
+    @animal = Animal.find(params[:id])
+    @animal.destroy
+
+    redirect_to root_path, status: :see_other
   end
 
 

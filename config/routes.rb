@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   post 'animals/reset_animals', to: 'animals#reset_animals', as: :reset_animals
 
   resources :articles
-  resources :animals, only: [:show, :new, :create] # Assurez-vous que :show, :new et :create sont définis
+  resources :animals
   end

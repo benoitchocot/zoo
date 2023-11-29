@@ -1,4 +1,6 @@
-<%= form_with model: article do |form| %>
+<div class="container">
+  <%= form_with model: article do |form| %>
+
   <div>
     <%= form.label :titre %><br>
     <%= form.text_field :titre %>
@@ -24,3 +26,4 @@
 </div>
 
 <% end %>
+</div>
