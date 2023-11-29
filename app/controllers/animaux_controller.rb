@@ -67,7 +67,7 @@ class AnimauxController < ApplicationController
     if @animal.save
       redirect_to @animal
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
