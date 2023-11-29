@@ -1,0 +1,28 @@
+<!-- app/views/api/show.html.erb -->
+<div class="container">
+<h1>Détails de l'animal</h1>
+
+<dl>
+  <dt>Nom :</dt>
+  <dd><%= @animal.nom %></dd>
+
+  <dt>Espece :</dt>
+  <dd><%= @animal.espece.nom %></dd>
+
+  <dt>Naissance :</dt>
+  <dd><%= @animal.naissance %></dd>
+
+  <dt>Décès :</dt>
+  <dd><%= @animal.deces %></dd>
+
+  <dt>Sexe :</dt>
+  <dd><%= @animal.sexe %></dd>
+
+  <dt>Observations :</dt>
+  <dd><%= @animal.observations %></dd>
+
+  <dt>Position :</dt>
+  <dd><%= @animal.position %></dd>
+</dl>
+<%= link_to 'Retour à la liste', api_animaux_path %>
+</div>
