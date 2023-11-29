@@ -4,7 +4,7 @@ class AnimauxController < ApplicationController
   before_action :load_animals_data
   before_action :check_admin, only: [:new]
 
-  
+
   def index
     @animaux = Animal.left_joins(espece: :enclo).all
     @animaux_par_espece = @animaux.group_by { |animal| animal.espece }
@@ -53,27 +53,24 @@ class AnimauxController < ApplicationController
   end
 
 
-  def new
-    @animal = Animal.new
-    # Ici, tu peux initialiser des valeurs par défaut ou effectuer d'autres opérations nécessaires pour le formulaire
+  def show
+    @animal = Animal.find(params[:id])
   end
 
-  # POST /api/animaux
+  def new
+    @animal = Animal.new
+  end
+
   def create
     @animal = Animal.new(animal_params)
 
     if @animal.save
-      redirect_to action: 'show', id: @animal.id # Rediriger vers la vue du nouvel animal après la création
+      redirect_to @animal
     else
-      render 'new' # Réafficher le formulaire avec les erreurs en cas d'échec de la sauvegarde
+      render :new
     end
   end
 
-  # GET /api/animaux/:id
-  def show
-    @animal = Animal.find(params[:id])
-    render 'show' # Assure-toi que le fichier show.html.erb est présent dans app/views/api
-  end
 
 def new_json
   @animaux = Animal.new

@@ -6,9 +6,8 @@ Rails.application.routes.draw do
 
   get 'animaux/index'
   get '/animaux', to: 'animaux#index'
+  post 'animaux/reset_animaux', to: 'animaux#reset_animaux', as: :reset_animaux
 
   resources :articles
-
-    resources :animaux, only: [:index, :show, :new, :create]
-      post 'animaux/reset_animaux', to: 'animaux#reset_animaux', as: :reset_animaux
+  resources :animaux
   end

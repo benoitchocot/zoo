@@ -58,17 +58,6 @@ class ArticlesController < ApplicationController
     redirect_to root_path, status: :see_other
   end
 
-  def view_animal
-    # Utilisez votre API pour récupérer les données de l'animal
-    api_controller = Api::ArticlesController.new
-    api_controller.request = request
-    api_controller.response = response
-    api_controller.animaux
-
-    # Vous pouvez maintenant accéder à @animal depuis la vue de cette action
-    @animal = api_controller.instance_variable_get('@animal')
-  end
-
 
   private
 

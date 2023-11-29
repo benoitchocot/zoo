@@ -1,4 +1,5 @@
-<%= form_with(model: @animal, url: new_api_animaux_path, method: :post, class: 'container') do |form| %>
+<%= form_with(model: @animal, url: new_animaux_path, class: 'container') do |form| %>
+<h1>Ajouter un animal</h1>
 <div>
   <%= form.label :nom %><br>
   <%= form.text_field :nom %>
