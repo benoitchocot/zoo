@@ -7,8 +7,8 @@
 </div>
 
 <div>
-  <%= form.label :espece %><br>
-  <%= form.collection_select :espece, @especes, :id, :nom %>
+  <%= form.label :espece_nom %><br>
+  <%= form.select :espece_nom, options_for_select(Animal.pluck(:espece_nom).uniq) %>
 </div>
 
 <div>
@@ -21,7 +21,8 @@
 </div>
 <div>
   <%= form.label :sexe %><br>
-  <%= form.select :sexe, options_for_select(Animal.pluck(:sexe).uniq) %></div>
+  <%= form.select :sexe, options_for_select(Animal.pluck(:sexe).uniq) %>
+</div>
 <div>
   <%= form.label :observations %><br>
   <%= form.text_area :observations %>
