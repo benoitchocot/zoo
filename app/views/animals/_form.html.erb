@@ -5,12 +5,12 @@
   <%= form.label :nom %><br>
   <%= form.text_field :nom %>
 </div>
-
+<!--
 <div>
-  <%= form.label :espece_nom %><br>
-  <%= form.select :espece_nom, options_for_select(Animal.pluck(:espece_nom).uniq) %>
+  <%= form.label 'Espece' %><br>
+  <%= form.select :especenom, options_for_select(Animal.pluck(:especenom).uniq) %>
 </div>
-
+-->
 <div>
   <%= form.label :naissance %><br>
   <%= form.date_field :naissance %>

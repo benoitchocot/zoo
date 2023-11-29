@@ -3,7 +3,7 @@ class CreateAnimals < ActiveRecord::Migration[7.1]
     create_table :animals do |t|
       t.string :_id
       t.string :nom
-      t.string :espece_nom
+      t.string :especenom
       t.date :naissance
       t.date :deces
       t.string :sexe

@@ -1,25 +1,24 @@
 <div class="container">
-<% @animals_grouped_by_espece_id.each do |espece_id, animals| %>
-  <% espece = animals.first.espece %>
-  <h2><%= espece.nom %></h2>
-  <% if espece.enclo.present? %>
-    <p>Enclos: <%= espece.enclo.nom %></p>
-    <p>Superficie: <%= espece.enclo.superficie %> m²</p>
-  <% else %>
-    <p>Aucun enclos associé à cette espèce.</p>
-  <% end %>
-  <ul>
-    <% animals.each do |animal| %>
-      <li><%= animal.nom %></li>
-      <!-- Autres détails de l'animal ici -->
+  <% @animals_grouped_by_espece_id.each do |espece_id, animals| %>
+    <% espece = animals.first.espece %>
+    <h2><%= espece.nom if espece.respond_to?(:nom) %></h2>
+    <% if espece.respond_to?(:enclo) && espece.enclo.present? %>
+      <p>Enclos: <%= espece.enclo.nom %></p>
+      <p>Superficie: <%= espece.enclo.superficie %> m²</p>
+    <% else %>
+      <p>Aucun enclos associé à cette espèce.</p>
     <% end %>
-  </ul>
-<% end %>
-
+    <ul>
+      <% animals.each do |animal| %>
+        <li><%= animal.nom %> - <%= animal.especenom %></li>
+        <!-- Autres détails de l'animal ici -->
+      <% end %>
+    </ul>
+  <% end %>
 </div>
 
 <% if current_user && current_user.is_admin? %>
   <%= link_to "Ajouter un animal", new_animal_path, class: "mb-3"%>
-  <%= button_to "Réinitialiser animals.json", reset_animals_path, method: :post, class: "mb-3" %>
+<!--  <%= button_to "Réinitialiser animals.json", reset_animals_path, method: :post, class: "mb-3" %> -->
 <% end %>
 </div>

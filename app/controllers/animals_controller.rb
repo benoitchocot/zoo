@@ -67,6 +67,7 @@ class AnimalsController < ApplicationController
     if @animal.save
       redirect_to @animal
     else
+      flash[:error] = @animal.errors.full_messages.join(', ')
       render :new
     end
   end
