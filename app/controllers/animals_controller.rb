@@ -174,7 +174,7 @@ def set_animal
 end
 
 def animal_params
-  params.require(:animal).permit(:nom, :espece, :naissance, :deces, :sexe, :observations, :position)
+  params.require(:animal).permit(:nom, :especenom, :naissance, :deces, :sexe, :observations, :position)
 end
 
 end
