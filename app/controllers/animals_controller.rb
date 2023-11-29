@@ -1,4 +1,4 @@
-class AnimauxController < ApplicationController
+class AnimalsController < ApplicationController
 
   before_action :authenticate_user!, except: [:index, :show]
   before_action :load_animals_data
@@ -6,13 +6,13 @@ class AnimauxController < ApplicationController
 
 
   def index
-    @animaux = Animal.left_joins(espece: :enclo).all
-    @animaux_par_espece = @animaux.group_by { |animal| animal.espece }
+    @animals = Animal.left_joins(espece: :enclo).all
+    @animals_par_espece = @animals.group_by { |animal| animal.espece }
   end
 
   def index_json
-    animaux_data = File.read('json/animaux.json')
-    @animaux = JSON.parse(animaux_data)
+    animals_data = File.read('json/animaux.json')
+    @animals = JSON.parse(animals_data)
 
     especes_data = File.read('json/especes.json')
     @especes = JSON.parse(especes_data)
@@ -20,14 +20,14 @@ class AnimauxController < ApplicationController
     enclos_data = File.read('json/enclos.json')
     enclos = JSON.parse(enclos_data)
 
-    @animaux_par_enclos = {}
+    @animals_par_enclos = {}
 
-    @animaux.each do |animal|
+    @animals.each do |animal|
       espece = animal['espece']
 
       @especes.each do |espece_data|
         if espece_data['_id'] == espece
-          @animaux_par_enclos[espece] = espece_data['enclos']
+          @animals_par_enclos[espece] = espece_data['enclos']
           break
         end
       end
@@ -74,7 +74,7 @@ class AnimauxController < ApplicationController
 
 
 def new_json
-  @animaux = Animal.new
+  @animals = Animal.new
   respond_to do |format|
     format.html { render 'new' }
     format.json { render json: @animal } # Par exemple, répondre avec du JSON
@@ -91,24 +91,24 @@ def create_json
 end
 
 def show_json
-  animaux_id = params[:id].to_i - 1  # Soustraire 1 car l'index commence à 0
-  animaux_data = File.read('json/animaux.json')
-  parsed_data = JSON.parse(animaux_data)
-  animaux = parsed_data[animaux_id]
-  if animaux
-    render json: animaux
+  animals_id = params[:id].to_i - 1  # Soustraire 1 car l'index commence à 0
+  animals_data = File.read('json/animaux.json')
+  parsed_data = JSON.parse(animals_data)
+  animals = parsed_data[animals_id]
+  if animals
+    render json: animals
   else
     render json: { error: 'Animal not found' }, status: :not_found
   end
 end
 
-def reset_animaux
+def reset_animals
   # Chemin vers les fichiers JSON
-  template_path = Rails.root.join('json/animaux_template.json')
-  animaux_path = Rails.root.join('json/animaux.json')
+  template_path = Rails.root.join('json/animals_template.json')
+  animals_path = Rails.root.join('json/animaux.json')
 
-  # Copie du contenu de animaux_template.json vers animaux.json
-  FileUtils.cp(template_path, animaux_path)
+  # Copie du contenu de animals_template.json vers animaux.json
+  FileUtils.cp(template_path, animals_path)
 
   # Redirection ou réponse appropriée après la réinitialisation
   redirect_to root_path, notice: 'animaux.json a été réinitialisé avec succès !'
@@ -125,7 +125,7 @@ end
 def fetch_animals_data
   JSON.parse(URI.open(ANIMAUX_JSON_URL).read)
 rescue StandardError => e
-  puts "Erreur lors du chargement des données des animaux : #{e.message}"
+  puts "Erreur lors du chargement des données des animals : #{e.message}"
   []
 end
 

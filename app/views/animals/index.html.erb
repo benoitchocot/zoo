@@ -1,5 +1,5 @@
 <div class="container">
-<% @animaux_par_espece.each do |espece, animaux| %>
+<% @animals_par_espece.each do |espece, animals| %>
   <% if espece.present? %>
     <h2><%= espece.nom %></h2>
     <% if espece.enclo.present? %>
@@ -9,20 +9,20 @@
       <p>Aucun enclos associé à cette espèce.</p>
     <% end %>
     <ul>
-      <% animaux.each do |animal| %>
+      <% animals.each do |animal| %>
         <li><%= animal.nom %></li>
         <!-- Autres détails de l'animal ici -->
       <% end %>
     </ul>
   <% else %>
   <h2>Information sur l'espèce indisponible.</h2>
-      <% animaux.each do |animal| %>
+      <% animals.each do |animal| %>
         <li><%= animal.nom %> - <%= animal.espece %> </li>
         <% end %>
   <% end %>
 <% end %>
 <% if current_user && current_user.is_admin? %>
   <%= link_to "Ajouter un animal", new_animal_path, class: "mb-3"%>
-  <%= button_to "Réinitialiser animaux.json", reset_animaux_path, method: :post, class: "mb-3" %>
+  <%= button_to "Réinitialiser animals.json", reset_animals_path, method: :post, class: "mb-3" %>
 <% end %>
 </div>
