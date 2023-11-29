@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_123434) do
   create_table "animals", force: :cascade do |t|
     t.string "_id"
     t.string "nom"
-    t.string "espece"
+    t.string "espece_nom"
     t.date "naissance"
     t.date "deces"
     t.string "sexe"

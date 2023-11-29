@@ -2,7 +2,7 @@
   {
     "_id": "drako",
     "nom": "Drako",
-    "espece": "kangourou",
+    "espece_nom": "kangourou",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -12,7 +12,7 @@
   {
     "_id": "ginger",
     "nom": "Ginger",
-    "espece": "kangourou",
+    "espece_nom": "kangourou",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -22,7 +22,7 @@
   {
     "_id": "eucalyptus",
     "nom": "Eucalyptus",
-    "espece": "koala",
+    "espece_nom": "koala",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -32,7 +32,7 @@
   {
     "_id": "peluche",
     "nom": "Peluche",
-    "espece": "koala",
+    "espece_nom": "koala",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -42,7 +42,7 @@
   {
     "_id": "bolt",
     "nom": "Bolt",
-    "espece": "autruche",
+    "espece_nom": "autruche",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -52,7 +52,7 @@
   {
     "_id": "kalia",
     "nom": "Kalia",
-    "espece": "autruche",
+    "espece_nom": "autruche",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -62,7 +62,7 @@
   {
     "_id": "donatello",
     "nom": "Donatello",
-    "espece": "tortue",
+    "espece_nom": "tortue",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -72,7 +72,7 @@
   {
     "_id": "Raphaela",
     "nom": "Raphaela",
-    "espece": "tortue",
+    "espece_nom": "tortue",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -82,7 +82,7 @@
   {
     "_id": "bambou",
     "nom": "Bambou",
-    "espece": "panda",
+    "espece_nom": "panda",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -92,7 +92,7 @@
   {
     "_id": "hao",
     "nom": "Hao",
-    "espece": "panda",
+    "espece_nom": "panda",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -102,7 +102,7 @@
   {
     "_id": "shere-khan",
     "nom": "Shere Khan",
-    "espece": "tigre",
+    "espece_nom": "tigre",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -112,7 +112,7 @@
   {
     "_id": "hosuni",
     "nom": "Hosuni",
-    "espece": "tigre",
+    "espece_nom": "tigre",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -122,7 +122,7 @@
   {
     "_id": "pongo",
     "nom": "Pongo",
-    "espece": "orang-outan",
+    "espece_nom": "orang-outan",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -132,7 +132,7 @@
   {
     "_id": "sumtra",
     "nom": "Sumatra",
-    "espece": "orang-outan",
+    "espece_nom": "orang-outan",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -142,7 +142,7 @@
   {
     "_id": "aleksei",
     "nom": "Aleksei",
-    "espece": "rhinoceros",
+    "espece_nom": "rhinoceros",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -152,7 +152,7 @@
   {
     "_id": "machu",
     "nom": "Machu",
-    "espece": "lama",
+    "espece_nom": "lama",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -162,7 +162,7 @@
   {
     "_id": "enola",
     "nom": "Enola",
-    "espece": "lama",
+    "espece_nom": "lama",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -172,7 +172,7 @@
   {
     "_id": "gala",
     "nom": "Gala",
-    "espece": "iguane",
+    "espece_nom": "iguane",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -182,7 +182,7 @@
   {
     "_id": "kaa",
     "nom": "Kaa",
-    "espece": "boa",
+    "espece_nom": "boa",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -192,7 +192,7 @@
   {
     "_id": "blu",
     "nom": "Blu",
-    "espece": "ara",
+    "espece_nom": "ara",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -202,7 +202,7 @@
   {
     "_id": "perla",
     "nom": "Perla",
-    "espece": "ara",
+    "espece_nom": "ara",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -212,7 +212,7 @@
   {
     "_id": "kamel",
     "nom": "Kamel",
-    "espece": "chameau",
+    "espece_nom": "chameau",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -222,7 +222,7 @@
   {
     "_id": "finnick",
     "nom": "Finnick",
-    "espece": "fennec",
+    "espece_nom": "fennec",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -232,7 +232,7 @@
   {
     "_id": "popi",
     "nom": "Popi",
-    "espece": "fennec",
+    "espece_nom": "fennec",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -242,7 +242,7 @@
   {
     "_id": "salazar",
     "nom": "Salazar",
-    "espece": "vipere",
+    "espece_nom": "vipere",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -252,7 +252,7 @@
   {
     "_id": "iyotake",
     "nom": "Iyotake",
-    "espece": "bison",
+    "espece_nom": "bison",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -262,7 +262,7 @@
   {
     "_id": "tatanka",
     "nom": "Tatanka",
-    "espece": "bison",
+    "espece_nom": "bison",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -272,7 +272,7 @@
   {
     "_id": "yotanka",
     "nom": "Yotanka",
-    "espece": "bison",
+    "espece_nom": "bison",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -282,7 +282,7 @@
   {
     "_id": "kodiak",
     "nom": "Kodiak",
-    "espece": "ours-noir",
+    "espece_nom": "ours-noir",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -292,7 +292,7 @@
   {
     "_id": "montana",
     "nom": "Montana",
-    "espece": "ours-noir",
+    "espece_nom": "ours-noir",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -302,7 +302,7 @@
   {
     "_id": "ulf",
     "nom": "Ulf",
-    "espece": "loup",
+    "espece_nom": "loup",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -312,7 +312,7 @@
   {
     "_id": "uma",
     "nom": "Uma",
-    "espece": "loup",
+    "espece_nom": "loup",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -322,7 +322,7 @@
   {
     "_id": "alaska",
     "nom": "Alaska",
-    "espece": "loup",
+    "espece_nom": "loup",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -332,7 +332,7 @@
   {
     "_id": "ryley",
     "nom": "Ryley",
-    "espece": "loup",
+    "espece_nom": "loup",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -342,7 +342,7 @@
   {
     "_id": "onyx",
     "nom": "Onyx",
-    "espece": "loup",
+    "espece_nom": "loup",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -352,7 +352,7 @@
   {
     "_id": "iowa",
     "nom": "Iowa",
-    "espece": "aigle",
+    "espece_nom": "aigle",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -362,7 +362,7 @@
   {
     "_id": "sakari",
     "nom": "Sakari",
-    "espece": "ours-polaire",
+    "espece_nom": "ours-polaire",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -372,7 +372,7 @@
   {
     "_id": "willy",
     "nom": "Willy",
-    "espece": "manchot",
+    "espece_nom": "manchot",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -382,7 +382,7 @@
   {
     "_id": "tuxa",
     "nom": "Tuxa",
-    "espece": "manchot",
+    "espece_nom": "manchot",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -392,7 +392,7 @@
   {
     "_id": "jasper",
     "nom": "Jasper",
-    "espece": "manchot",
+    "espece_nom": "manchot",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -402,7 +402,7 @@
   {
     "_id": "gorfa",
     "nom": "Gorfa",
-    "espece": "manchot",
+    "espece_nom": "manchot",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -412,7 +412,7 @@
   {
     "_id": "kourkova",
     "nom": "Kourkova",
-    "espece": "manchot",
+    "espece_nom": "manchot",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -422,7 +422,7 @@
   {
     "_id": "bibi",
     "nom": "Bibi",
-    "espece": "phoque",
+    "espece_nom": "phoque",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -432,7 +432,7 @@
   {
     "_id": "ouate",
     "nom": "Ouate",
-    "espece": "phoque",
+    "espece_nom": "phoque",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -442,7 +442,7 @@
   {
     "_id": "raphael",
     "nom": "Raphaël",
-    "espece": "suricate",
+    "espece_nom": "suricate",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -452,7 +452,7 @@
   {
     "_id": "justine",
     "nom": "Justine",
-    "espece": "suricate",
+    "espece_nom": "suricate",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -462,7 +462,7 @@
   {
     "_id": "julien",
     "nom": "Julien",
-    "espece": "suricate",
+    "espece_nom": "suricate",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -472,7 +472,7 @@
   {
     "_id": "lea",
     "nom": "Léa",
-    "espece": "suricate",
+    "espece_nom": "suricate",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -482,7 +482,7 @@
   {
     "_id": "vincent",
     "nom": "Vincent",
-    "espece": "suricate",
+    "espece_nom": "suricate",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -492,7 +492,7 @@
   {
     "_id": "eleonore",
     "nom": "Eléonore",
-    "espece": "suricate",
+    "espece_nom": "suricate",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -502,7 +502,7 @@
   {
     "_id": "tanza",
     "nom": "Tanza",
-    "espece": "gnou",
+    "espece_nom": "gnou",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -512,7 +512,7 @@
   {
     "_id": "namie",
     "nom": "Namie",
-    "espece": "gnou",
+    "espece_nom": "gnou",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -522,7 +522,7 @@
   {
     "_id": "hathi",
     "nom": "Hathi",
-    "espece": "elephant",
+    "espece_nom": "elephant",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -532,7 +532,7 @@
   {
     "_id": "jad-bal-ja",
     "nom": "Jad-bal-ja",
-    "espece": "lion",
+    "espece_nom": "lion",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -542,7 +542,7 @@
   {
     "_id": "nala",
     "nom": "Nala",
-    "espece": "lion",
+    "espece_nom": "lion",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -552,7 +552,7 @@
   {
     "_id": "enak",
     "nom": "Enak",
-    "espece": "girafe",
+    "espece_nom": "girafe",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -562,7 +562,7 @@
   {
     "_id": "kunta",
     "nom": "Kunta",
-    "espece": "girafe",
+    "espece_nom": "girafe",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -572,7 +572,7 @@
   {
     "_id": "marty",
     "nom": "Marty",
-    "espece": "zebre",
+    "espece_nom": "zebre",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -582,7 +582,7 @@
   {
     "_id": "siofa",
     "nom": "Siofa",
-    "espece": "zebre",
+    "espece_nom": "zebre",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -592,7 +592,7 @@
   {
     "_id": "ziggy",
     "nom": "Ziggy",
-    "espece": "vautour",
+    "espece_nom": "vautour",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -602,7 +602,7 @@
   {
     "_id": "buzzie",
     "nom": "Buzzie",
-    "espece": "vautour",
+    "espece_nom": "vautour",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -612,7 +612,7 @@
   {
     "_id": "dizzie",
     "nom": "Dizzie",
-    "espece": "vautour",
+    "espece_nom": "vautour",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -622,7 +622,7 @@
   {
     "_id": "yael",
     "nom": "Yaël",
-    "espece": "chamois",
+    "espece_nom": "chamois",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -632,7 +632,7 @@
   {
     "_id": "isabelle",
     "nom": "Isabelle",
-    "espece": "chamois",
+    "espece_nom": "chamois",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -642,7 +642,7 @@
   {
     "_id": "messidor",
     "nom": "Messidor",
-    "espece": "chamois",
+    "espece_nom": "chamois",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -652,7 +652,7 @@
   {
     "_id": "julie",
     "nom": "Julie",
-    "espece": "chamois",
+    "espece_nom": "chamois",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -662,7 +662,7 @@
   {
     "_id": "borealis",
     "nom": "Borealis",
-    "espece": "lynx",
+    "espece_nom": "lynx",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -672,7 +672,7 @@
   {
     "_id": "mudge",
     "nom": "Mudge",
-    "espece": "loutre",
+    "espece_nom": "loutre",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -682,7 +682,7 @@
   {
     "_id": "rappy",
     "nom": "Rappy",
-    "espece": "loutre",
+    "espece_nom": "loutre",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -692,7 +692,7 @@
   {
     "_id": "bobak",
     "nom": "Bobak",
-    "espece": "marmotte",
+    "espece_nom_nom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -702,7 +702,7 @@
   {
     "_id": "monax",
     "nom": "Monax",
-    "espece": "marmotte",
+    "espece_nom_nom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -712,7 +712,7 @@
   {
     "_id": "olympus",
     "nom": "Olympus",
-    "espece": "marmotte",
+    "espece_nom_nom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -722,7 +722,7 @@
   {
     "_id": "kamtchaka",
     "nom": "Kamtchaka",
-    "espece": "marmotte",
+    "espece_nom_nom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -732,7 +732,7 @@
   {
     "_id": "sibiraca",
     "nom": "Sibiraca",
-    "espece": "marmotte",
+    "espece_nom_nom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -742,7 +742,7 @@
   {
     "_id": "harry",
     "nom": "Harry",
-    "espece": "chouette",
+    "espece_nom_nom": "chouette",
     "naissance": "",
     "deces": "",
     "sexe": "M",

@@ -10,7 +10,7 @@
   <p>Zone géographique : <%= data['zone'].capitalize %></p>
   <ul>
     <% @animaux.each do |animal| %>
-      <% if animal['espece'] == espece_id %>
+      <% if animal['espece_nom'] == espece_id %>
             <!-- Autres détails de l'animal ici -->
         <li><%= animal['nom'] %> - Sexe : <%= animal['sexe'] %></li>
       <% end %>
@@ -22,7 +22,7 @@
     <% @animaux.each do |animal| %>
       <% espece_trouvee = @especes.any? { |espece| espece['_id'] == animal['espece'] } %>
       <% unless espece_trouvee %>
-        <li><%= animal['nom'] %> - <%= animal['espece'] %></li>
+        <li><%= animal['nom'] %> - <%= animal['espece_nom'] %></li>
         <!-- Autres détails de l'animal ici -->
       <% end %>
     <% end %>

@@ -6,8 +6,8 @@ class AnimalsController < ApplicationController
 
 
   def index
-    @animals = Animal.left_joins(espece: :enclo).all
-    @animals_par_espece = @animals.group_by { |animal| animal.espece }
+    @animals = Animal.all
+    @animals_grouped_by_espece_id = @animals.group_by { |animal| animal.espece }
   end
 
   def index_json
