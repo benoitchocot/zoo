@@ -1,5 +1,4 @@
 <div class="container">
-
 <% @animaux_par_espece.each do |espece, animaux| %>
   <% if espece.present? %>
     <h2><%= espece.nom %></h2>
@@ -9,7 +8,6 @@
     <% else %>
       <p>Aucun enclos associé à cette espèce.</p>
     <% end %>
-
     <ul>
       <% animaux.each do |animal| %>
         <li><%= animal.nom %></li>
@@ -23,11 +21,8 @@
         <% end %>
   <% end %>
 <% end %>
-
-
 <% if current_user && current_user.is_admin? %>
   <%= link_to "Ajouter un animal", new_api_animaux_path, class: "mb-3"%>
-
   <%= button_to "Réinitialiser animaux.json", api_reset_animaux_path, method: :post, class: "mb-3" %>
 <% end %>
 </div>

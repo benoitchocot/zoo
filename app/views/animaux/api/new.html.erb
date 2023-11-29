@@ -1,0 +1,32 @@
+<%= form_with(model: @animal, url: new_api_animaux_path, class: 'container') do |form| %>
+<div>
+  <%= form.label :nom %><br>
+  <%= form.text_field :nom %>
+</div>
+<div>
+  <%= form.label :espece %><br>
+  <%= form.select :espece, options_for_select(Animal.pluck(:espece).uniq) %>
+</div>
+<div>
+  <%= form.label :naissance %><br>
+  <%= form.date_field :naissance %>
+</div>
+<div>
+  <%= form.label :deces %><br>
+  <%= form.date_field :deces %>
+</div>
+<div>
+  <%= form.label :sexe %><br>
+  <%= form.select :sexe, options_for_select(Animal.pluck(:sexe).uniq) %></div>
+<div>
+  <%= form.label :observations %><br>
+  <%= form.text_area :observations %>
+</div>
+<div>
+  <%= form.label :position %><br>
+  <%= form.select :position, options_for_select(Animal.pluck(:position).uniq) %></div>
+</div>
+<div><br>
+  <%= form.submit "Ajouter l'animal" %>
+</div>
+<% end %>

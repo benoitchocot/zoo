@@ -10,8 +10,7 @@ Rails.application.routes.draw do
   resources :articles
 
   namespace :api do
-    resources :animaux, only: [:index, :new, :create, :show, :update, :destroy]
-    post 'animaux/reset_animaux', to: 'animaux#reset_animaux', as: :reset_animaux
-
+    resources :animaux
+  #  post 'animaux/reset_animaux', to: 'animaux#reset_animaux', as: :reset_animaux
   end
 end

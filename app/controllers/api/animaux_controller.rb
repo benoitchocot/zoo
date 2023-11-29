@@ -9,14 +9,36 @@ class Api::AnimauxController < ApplicationController
   require 'json'
 
 
-  def index
-    @animaux = Animal.all
+    # GET /api/animaux
+    def index
+      @animaux = Animal.all
+      render json: @animaux
+    end
 
-    animaux = File.read('json/animaux.json')
-    render json: animaux
-  end
+    # GET /api/animaux/1
+    def show
+      render json: @animal
+    end
 
-  def new
+    # GET /api/animaux/new
+    def new
+      @animal = Animal.new
+      # Ici, tu peux initialiser des valeurs par défaut ou effectuer d'autres opérations nécessaires pour le formulaire
+      render "animaux/api/new"
+    end
+
+    # POST /api/animaux
+    def create
+      @animal = Animal.new(animal_params)
+
+      if @animal.save
+        render json: @animal, status: :created
+      else
+        render json: @animal.errors, status: :unprocessable_entity
+      end
+    end
+
+  def new_json
     @animaux = Animal.new
     respond_to do |format|
       format.html { render 'api/new' }
@@ -24,7 +46,7 @@ class Api::AnimauxController < ApplicationController
     end
   end
 
-  def create
+  def create_json
     new_animal = { "nom" => params[:nom], "espece" => params[:espece], "naissance" => params[:naissance], "deces" => params[:deces], "sexe" => params[:sexe], "observations" => params[:observations], "position" => params[:position] }
     @animals_data << new_animal
 
@@ -84,6 +106,14 @@ class Api::AnimauxController < ApplicationController
     File.open(file_path, 'w') do |f|
       f.write(JSON.pretty_generate(@animals_data))
     end
+  end
+
+  def set_animal
+    @animal = Animal.find(params[:id])
+  end
+
+  def animal_params
+    params.permit(:nom, :espece, :naissance, :deces, :sexe, :observations, :position)
   end
 
 end
