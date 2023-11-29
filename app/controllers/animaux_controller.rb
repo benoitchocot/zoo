@@ -67,9 +67,10 @@ class AnimauxController < ApplicationController
     if @animal.save
       redirect_to @animal
     else
-      render :new, status: :unprocessable_entity
+      render :new
     end
   end
+
 
 
 def new_json
@@ -147,7 +148,7 @@ def set_animal
 end
 
 def animal_params
-  params.permit(:nom, :espece, :naissance, :deces, :sexe, :observations, :position)
+  params.require(:animal).permit(:nom, :espece, :naissance, :deces, :sexe, :observations, :position)
 end
 
 end
