@@ -15,12 +15,14 @@ Clonez le projet sur votre machine :
 - gh repo clone benoitchocot/zoo
 
 Installez les dépendances en utilisant la commande :
-
 bundle install <br>
+
 Effectuez la migration de la base de données :
+rails db:migrate<br>
 
-bin/rails db:migrate<br>
+Vous pouvez aussi importer les données du zoo avec :
+rails import:zoo <br>
+
 Pour lancer l'application, exécutez la commande suivante :
-
 bin/rails server <br>
 Visitez http://localhost:3000 dans votre navigateur pour accéder au projet.
