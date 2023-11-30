@@ -5,12 +5,12 @@
 }
 h2 {
   color: var(--green);
-  font: bold;
+  font-style: bold;
 }
 
 h3 {
   color: var(--green);
-  font: 600 italic;
+  font-style: italic;
 }
 
 body {
