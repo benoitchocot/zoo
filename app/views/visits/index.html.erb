@@ -1,15 +1,21 @@
 <div class="container">
     <h1> Ma visite au Zoo </h1>
 
-    <ul>
+    <div class="m-3 row">
         <% @visits.each do |visit| %>
-        <h3>
+        <div class="col-md-4">
+        <h2>
             <%= visit.title %>
-        </h3> 
+        </h2> 
         <p>
             <%= visit.body %>
         </p>
+        </div>
         <% end %>
-    </ul>
+    </div>
+
+<% if current_user && current_user.is_admin? %>
+  <%= link_to "Nouvel article", new_visit_path %>
+<% end %>
 
 <%= render "infos", visit: @visit %>

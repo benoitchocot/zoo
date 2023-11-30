@@ -1,3 +1,18 @@
+:root {
+  --blue: #6495ed;
+  --white: #faf0e6;
+  --green: #108247
+}
+h2 {
+  color: var(--green);
+  font: bold;
+}
+
+h3 {
+  color: var(--green);
+  font: 600 italic;
+}
+
 body {
   overflow-x: hidden;
 }
