@@ -1,15 +1,16 @@
 <div class="container">
 <h1> Ma visite au Zoo </h1>
 
-<% if @visit.present? %>
+  <ul>
+    <% @visits.each do |visit| %>
+      <% unless visit.archived? %>
+        <li>
+          <%= link_to visit.title, visit %>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
 
-<h1><%= @visit.title %></h1>
 
-<p><%= @visit.body %></p>
 
-<% else %>
-
-<h2> Pas d'articles pour le moment ! </h2>
-
-<% end %>
 </div>
