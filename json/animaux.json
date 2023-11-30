@@ -692,7 +692,7 @@
   {
     "_id": "bobak",
     "nom": "Bobak",
-    "especenom_nom": "marmotte",
+    "especenom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -702,7 +702,7 @@
   {
     "_id": "monax",
     "nom": "Monax",
-    "especenom_nom": "marmotte",
+    "especenom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -712,7 +712,7 @@
   {
     "_id": "olympus",
     "nom": "Olympus",
-    "especenom_nom": "marmotte",
+    "especenom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -722,7 +722,7 @@
   {
     "_id": "kamtchaka",
     "nom": "Kamtchaka",
-    "especenom_nom": "marmotte",
+    "especenom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "M",
@@ -732,7 +732,7 @@
   {
     "_id": "sibiraca",
     "nom": "Sibiraca",
-    "especenom_nom": "marmotte",
+    "especenom": "marmotte",
     "naissance": "",
     "deces": "",
     "sexe": "F",
@@ -742,7 +742,7 @@
   {
     "_id": "harry",
     "nom": "Harry",
-    "especenom_nom": "chouette",
+    "especenom": "chouette",
     "naissance": "",
     "deces": "",
     "sexe": "M",

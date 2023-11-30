@@ -10,4 +10,5 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :animals
+  resources :visits
   end

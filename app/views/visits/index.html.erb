@@ -1,0 +1,15 @@
+<div class="container">
+<h1> Ma visite au Zoo </h1>
+
+<% if @visit.present? %>
+
+<h1><%= @visit.title %></h1>
+
+<p><%= @visit.body %></p>
+
+<% else %>
+
+<h2> Pas d'articles pour le moment ! </h2>
+
+<% end %>
+</div>
