@@ -5,9 +5,9 @@ require 'faker'
 class Article < ApplicationRecord
   include Visible
 
-  has_one_attached :image
+  has_one_attached :image, dependent: :destroy
 
-  validate :image_attached, :image_content_type
+  validate :image_content_type#, :image_attached
 
   validates :titre, presence: true
   validates :body, presence: true, length: { minimum: 10 }
@@ -20,19 +20,19 @@ class Article < ApplicationRecord
                 Faker::Lorem.paragraphs(number: 20).join("\n\n")
                 "\n\n"
 
+      valid_image_url = 'https://picsum.photos/300/200.png' # Remplacez ceci par une URL valide
 
-      image_url = "https://source.unsplash.com/random/300x200"
-      
       article = Article.new(
         titre: title,
         body: content,
         status: "public",
-        image: image_url
-      )
+        image: ""
+        )
       unless article.save
         puts "Erreur lors de la création de l'article : #{article.errors.full_messages}"
       end
     end
+
     private
 
   def image_attached
@@ -40,7 +40,7 @@ class Article < ApplicationRecord
   end
 
   def image_content_type
-    return unless image.attached?
+    return unless image.attached? # Ne vérifie le type de contenu que si une image est attachée
 
     allowed_types = ['image/png', 'image/jpg', 'image/jpeg']
     unless image.content_type.in?(allowed_types)
