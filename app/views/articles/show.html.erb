@@ -2,6 +2,13 @@
 <h1><%= @article.titre %></h1>
 
 <p><%= @article.body %></p>
+
+<% if @article.image.attached? %>
+  <%= image_tag @article.image, class: "img-thumbnail", style: "max-width:300px;" %>
+<% else %>
+  <p>No image attached</p>
+<% end %>
+
 <% if current_user && current_user.is_admin? %>
   <ul>
     <li><%= link_to "Edit", edit_article_path(@article) %></li>

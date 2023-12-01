@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
   private
 
     def article_params
-      params.require(:article).permit(:titre, :body, :status)
+      params.require(:article).permit(:titre, :body, :status, :image)
     end
 
     def check_admin
