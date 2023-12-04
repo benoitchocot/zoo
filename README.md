@@ -49,3 +49,8 @@ rails import:zoo
 bin/rails server
 
 8. Visitez http://localhost:3000 dans votre navigateur pour accéder au projet.
+
+
+### Administrateur 
+- email: 'admin@swag.com'
+- mot de passe: 'swagmax'
