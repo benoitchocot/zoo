@@ -15,11 +15,11 @@ git clone https://github.com/benoitchocot/zoo.git
 cd zoo
 
 3. Construisez l'image Docker :
-docker build -t nom_image:tag .
-- Remplacez nom_image:tag par ce que vous voulez<br>
+docker build -t ruby:zoo .
+- Remplacez ruby:zoo par ce que vous voulez<br>
 
 4. Lancez le conteneur Docker avec l'application Rails :
-docker run -p 3000:3000 nom_image:tag
+docker run -p 3000:3000 ruby:zoo
 
 
 5. Une fois le conteneur en cours d'exécution, visitez http://localhost:3000 dans votre navigateur pour accéder à l'application.

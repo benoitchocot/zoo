@@ -10,6 +10,7 @@ COPY Gemfile Gemfile.lock ./
 # Installer les gems
 RUN bundle install
 
+
 # Copier le reste des fichiers de l'application dans le conteneur
 COPY . .
 
@@ -17,4 +18,9 @@ COPY . .
 EXPOSE 3000
 
 # Commande pour démarrer l'application Rails
-CMD ["rails", "server", "-b", "0.0.0.0"]
+# Copier le script d'entrée dans l'image
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+# Définir le script d'entrée comme point d'entrée
+ENTRYPOINT ["docker-entrypoint.sh"]
