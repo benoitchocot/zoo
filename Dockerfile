@@ -13,8 +13,8 @@ RUN bundle install
 # Copier le reste des fichiers de l'application dans le conteneur
 COPY . .
 
-# Exposer le port nécessaire pour l'application Rails
+# Exposer le port 3000
 EXPOSE 3000
 
-# Commande pour démarrer l'application (exemple pour Rails)
-CMD ["rails", "server"]
+# Commande pour démarrer l'application Rails
+CMD ["rails", "server", "-b", "0.0.0.0"]
