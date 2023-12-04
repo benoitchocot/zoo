@@ -11,5 +11,4 @@ services:
       RAILS_ENV: development
     volumes:
       - .:/app  # Montage du répertoire local dans le conteneur pour le développement
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '127.0.0.1'"
 
