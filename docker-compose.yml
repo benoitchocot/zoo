@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Port utilisé par l'application Rails
+    environment:
+      RAILS_ENV: development
+    volumes:
+      - .:/app  # Montage du répertoire local dans le conteneur pour le développement
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '127.0.0.1'"
+
