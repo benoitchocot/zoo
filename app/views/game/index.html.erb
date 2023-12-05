@@ -1,0 +1,27 @@
+<div class="container">  <h1>Page Game</h1>
+ 
+    <div>Voulez vous commencer à jouer ?</div>
+        <button id="startGameButton">Démarrer le jeu</button>
+    </div>
+
+</div>    
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const startGameButton = document.getElementById('startGameButton');
+  startGameButton.addEventListener('click', function() {
+    fetch('/game/api/animals')
+      .then(response => response.json())
+      .then(animals => {
+        // Mélanger les animaux pour obtenir un ordre aléatoire
+        const shuffledAnimals = animals.sort(() => Math.random() - 0.5);
+        // Sélectionner les 4 premiers animaux aléatoires
+        const randomFourAnimals = shuffledAnimals.slice(0, 4);
+        console.log(randomFourAnimals);
+        // Utiliser ces données pour démarrer le jeu ou toute autre action nécessaire
+        // ...
+      })
+      .catch(error => console.error('Erreur :', error));
+  });
+});
+
+  </script>
