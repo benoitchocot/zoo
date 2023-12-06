@@ -10,7 +10,7 @@ class GamesController < ApplicationController
   end
 
   def import_data
-    file_path = 'json/animaux.json'
+    file_path = 'data/animaux.json'
     animals_data = JSON.parse(File.read(file_path))
 
     animals_data.each do |animal_data|
