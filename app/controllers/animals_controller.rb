@@ -5,6 +5,7 @@ class AnimalsController < ApplicationController
   before_action :check_admin, only: [:create, :update]
 
 
+
   def index
     @animals = Animal.all
     @animals_grouped_by_espece_id = @animals.group_by { |animal| animal.espece }

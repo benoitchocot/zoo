@@ -68,3 +68,4 @@ end
 gem "devise", "~> 4.9"
 gem "faker"
 gem "fileutils"
+gem 'rqrcode'

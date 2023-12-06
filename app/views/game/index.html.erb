@@ -4,6 +4,8 @@
         <button id="startGameButton">Démarrer le jeu</button>
     </div>
 
+    <div id="animalList"></div>
+
 </div>    
   <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -16,12 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const shuffledAnimals = animals.sort(() => Math.random() - 0.5);
         // Sélectionner les 4 premiers animaux aléatoires
         const randomFourAnimals = shuffledAnimals.slice(0, 4);
-        console.log(randomFourAnimals);
-        // Utiliser ces données pour démarrer le jeu ou toute autre action nécessaire
-        // ...
-      })
-      .catch(error => console.error('Erreur :', error));
-  });
-});
-
+            // Affichage des animaux dans animalList
+            randomFourAnimals.forEach(animal => {
+              const animalElement = document.createElement('p');
+              animalElement.textContent = `Nom: ${animal.nom}, Espèce: ${animal.especenom}`;
+              animalList.appendChild(animalElement);
+            });
+          })
+          .catch(error => console.error('Erreur :', error));
+      });
+    });
   </script>

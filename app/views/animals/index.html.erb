@@ -1,17 +1,30 @@
-<div class="container">
+
+  <div class="container">
   <% @animals_grouped_by_espece_id.each do |espece_id, animals| %>
     <% espece = animals.first.espece %>
-    <h2><%= espece.nom if espece.respond_to?(:nom) %></h2>
+          <!-- Génération du QR code -->
+          <% qr_size = 2 %>
+          <% qr_data = "https://fr.wikipedia.org/wiki/#{URI.encode_www_form_component(espece.nom)}" %>
+          <% qr = RQRCode::QRCode.new(qr_data) %>
+          <% qr_code = qr.as_svg(module_size: qr_size).html_safe %>
+          <h2><%= espece.nom if espece.respond_to?(:nom) %></h2>
+          <div class="qrcode">
+            <%= qr_code %>
+          </div>
     <% if espece.respond_to?(:enclo) && espece.enclo.present? %>
       <p>Enclos: <%= espece.enclo.nom %></p>
       <p>Superficie: <%= espece.enclo.superficie %> m²</p>
+
     <% else %>
       <p>Aucun enclos associé à cette espèce.</p>
     <% end %>
     <ul>
       <% animals.each do |animal| %>
-        <li><%= animal.nom %> - <%= animal.especenom %></li>
-        <!-- Autres détails de l'animal ici -->
+        <li>
+          <%= animal.nom %> - <%= animal.espece.nom %>
+          <!-- Autres détails de l'animal ici -->
+
+        </li>
       <% end %>
     </ul>
   <% end %>
