@@ -13,6 +13,8 @@ class GamesController < ApplicationController
     file_path = 'data/animaux.json'
     animals_data = JSON.parse(File.read(file_path))
 
+    Animal.destroy_all
+
     animals_data.each do |animal_data|
       Animal.create(
         _id: animal_data['_id'],
@@ -26,6 +28,6 @@ class GamesController < ApplicationController
       )
     end
 
-    redirect_to games_path, notice: 'Importation des animaux terminée !'
+    redirect_to games_path, notice: 'Le jeu a bien été remis à zéro'
   end
 end
