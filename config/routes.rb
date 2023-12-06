@@ -8,10 +8,12 @@ Rails.application.routes.draw do
   get '/animals', to: 'animals#index'
   post 'animals/reset_animals', to: 'animals#reset_animals', as: :reset_animals
 
-  get 'game/api/animals', to: 'game#animals_api'
+  get 'games/api/animals', to: 'games#animals_api'
 
   resources :articles
   resources :animals
   resources :visits
-  resources :game
+  resources :games do
+    post 'import_data', on: :collection
+  end
   end
