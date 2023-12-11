@@ -32,6 +32,6 @@
 
 <% if current_user && current_user.is_admin? %>
   <%= link_to "Ajouter un animal", new_animal_path, class: "mb-3"%>
-<!--  <%= button_to "Réinitialiser animals.json", reset_animals_path, method: :post, class: "mb-3" %> -->
+  <%= button_to "Réinitialiser animals.json", reset_animals_path, method: :post, class: "mb-3" %>
 <% end %>
 </div>
